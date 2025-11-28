@@ -61,6 +61,21 @@ have a `label` (used downstream for metrics) and a `text` field (textual descrip
 detector). See `data/prompts/drywall_prompts.yaml` for a richer template you can copy into configs at
 run time.
 
+## Processed Dataset API
+- `src/data/openai_jsonl_converter.py` parses Roboflow/OpenAI JSONL exports into normalized manifests
+   (run via `scripts/convert_openai_jsonl.py`).
+- `src/data/processed_dataset.py` loads those manifests and wraps each sample in a convenient
+   dataclass-like record for downstream pipelines.
+- `src/data/image_cache.py` plus `scripts/download_processed_images.py` let you pre-download all
+   remote `image_url` assets into `data/processed_images/`:
+
+   ```bash
+   python scripts/download_processed_images.py data/processed/drywall_join_detect/train.json \
+         data/processed/cracks/train.json --cache-dir data/processed_images
+   ```
+
+   Each image is stored once using a SHA-256 hash of its URL, keeping the dataset reproducible.
+
 ## Next Steps
 - Implement data ingestion utilities under `src/data/`.
 - Wire a prompted segmentation pipeline (GroundingDINO → SAM) under `src/pipeline/`.
