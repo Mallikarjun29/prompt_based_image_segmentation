@@ -18,12 +18,15 @@ prompts:
 models:
   detector:
     name: grounding_dino
+    config_path: checkpoints/GroundingDINO_SwinT_OGC.py
     checkpoint_path: checkpoints/groundingdino_swint_ogc.pth
     box_threshold: 0.35
     text_threshold: 0.25
   segmentor:
     name: sam_hq
+    model_type: sam_hq_vit_h
     checkpoint_path: checkpoints/sam_hq_vit_h.pth
+    mask_threshold: 0.5
     points_per_side: 64
     pred_iou_thresh: 0.88
 

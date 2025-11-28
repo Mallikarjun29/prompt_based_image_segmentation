@@ -76,6 +76,24 @@ run time.
 
    Each image is stored once using a SHA-256 hash of its URL, keeping the dataset reproducible.
 
+## Prompted Segmentation Pipeline
+- `src/models/grounding_dino.py` wraps the GroundingDINO SwinT checkpoint to produce prompt-aware
+   bounding boxes.
+- `src/models/sam_wrapper.py` exposes a simple SAM interface to turn boxes into masks.
+- `src/pipeline/prompted_segmentor.py` fuses the detector + segmentor for a single prompt.
+- Run the full pipeline with:
+
+   ```bash
+   python scripts/run_prompted_segmentation.py \
+         data/processed/drywall_join_detect/valid.json \
+         --prompt-label exposed_joint_tape \
+         --config configs/base.yaml \
+         --output-dir outputs/masks/drywall_valid
+   ```
+
+   Prompt labels come from `configs/base.yaml`. Ensure the referenced GroundingDINO config, checkpoints,
+   and SAM checkpoints exist under `checkpoints/` before running.
+
 ## Next Steps
 - Implement data ingestion utilities under `src/data/`.
 - Wire a prompted segmentation pipeline (GroundingDINO → SAM) under `src/pipeline/`.
