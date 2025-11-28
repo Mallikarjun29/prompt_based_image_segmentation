@@ -1,0 +1,4175 @@
+{
+  "dataset": "drywall_join_detect",
+  "split": "valid",
+  "num_samples": 202,
+  "label_frequencies": {
+    "drywall_joint": 250
+  },
+  "reference_resolution": 1024,
+  "samples": [
+    {
+      "id": "drywall_join_detect_valid_00000",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/46d2e9ab69b0461b39d288062dc8479f/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.451613,
+            0.975562,
+            0.641251
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.018573,
+            0.26002,
+            0.13392
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00001",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/1dbc9bf69a67e31ed30b5667ef934553/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.005865,
+            0.223851,
+            1.0,
+            0.392962
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.588465,
+            1.0,
+            1.0
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00002",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/dd7caa3ce179e7f0463809486fca4025/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.40958,
+            0.241447,
+            0.509286,
+            0.721408
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00003",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/0d0284385b596e6503bad827858cf813/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.304985,
+            0.494624,
+            0.738025,
+            0.535679
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00004",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/6a69b40e35288e579d5cb37e2f3766eb/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.734115,
+            0.130987,
+            0.825024,
+            1.0
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.125122,
+            0.230694,
+            0.234604,
+            1.0
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00005",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/394cef1bb0073187d71e5e3bfafee46f/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.612903,
+            1.0,
+            0.743891
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.809384,
+            0.819159,
+            0.979472
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.776149,
+            0.770283,
+            1.0,
+            0.843597
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00006",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/8fca71fa3fc0cd73346c184d67cad1c1/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.516129,
+            0.4174,
+            1.0,
+            0.717498
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00007",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/69767bf6866f74dd534730c7e15606f3/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.516129,
+            0.152493,
+            0.717498,
+            0.707722
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00008",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/dec5b227317b4e0757a3655a0d37d7b0/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.251222,
+            0.42131,
+            0.741935,
+            0.643206
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00009",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/e0da7393cc785adcccadd1f2ba87f251/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.576735,
+            0.338221,
+            1.0,
+            0.727273
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.230694,
+            0.59824,
+            0.662757,
+            1.0
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00010",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/b43aec293801fea04bcf6f80cc6b4c2a/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.430108,
+            0.256109,
+            0.568915,
+            0.71261
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00011",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/4d36ec650e486ac47bd0b26f38d0a8e2/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.109482,
+            0.350929,
+            0.84262,
+            0.40567
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00012",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/1abfb56a736580a0753f37fb62b4369b/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.364614,
+            0.516129,
+            0.596285,
+            1.0
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00013",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/a3306de8c81210e93aad34dcc7bbfd36/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.322581,
+            0.11828,
+            0.782014,
+            0.597263
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00014",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/a65b2f7f301e17ae293278ef39f27722/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.403715,
+            0.304985,
+            0.44477,
+            0.738025
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00015",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/342e83109d3a0c1d4f716461b3a0b8bd/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.017595,
+            0.324536,
+            1.0,
+            0.467253
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00016",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/a1deda79ba4228b6812703a8e6e42f73/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.239492,
+            0.0,
+            0.865103,
+            0.690127
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00017",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/1f3b4ac0833df5d577e472f36b3d36dd/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.025415,
+            0.259042,
+            0.518084,
+            0.601173
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00018",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/9039ddd733d3948f5fd3437940a01a3c/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.0,
+            0.432063,
+            0.173998
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.001955,
+            0.220919,
+            1.0,
+            0.508309
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00019",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/0150a57b5d0f2cbadd9a3129216cd1f5/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.362659,
+            0.511241,
+            0.72825,
+            0.54741
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00020",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/5e09e4afceb89854f15847073f0732cf/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.293255,
+            0.418377,
+            0.765396,
+            0.517107
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00021",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/f66d98b9b4f4af084ede6fc01833d6b9/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.219941,
+            0.446725,
+            0.889541,
+            0.517107
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00022",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/aba40a062df982a03d7db9aebd8c1fa2/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.375367,
+            0.424242,
+            0.944282,
+            0.83871
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00023",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/8bebc99f1ac04eed9293e8a8be411678/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.282502,
+            0.474096,
+            0.733138,
+            0.536657
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00024",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/d41f43a74926c94df79c49e61f580e9d/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.020528,
+            0.490714,
+            0.628543,
+            0.618768
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00025",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/ce8e8b0f5dc0fd24c553f3fc99630876/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.184751,
+            0.670577,
+            0.378299
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.721408,
+            0.588465,
+            0.843597
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00026",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/12e1782fecf433c052802fec1844cb70/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.189638,
+            0.028348,
+            0.577713,
+            0.702835
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00027",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/a815847682be74e034daaf7e9afccc3e/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.308895,
+            0.264907,
+            1.0,
+            0.934506
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00028",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/81991b9abc00d4495d5f129244ef3054/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.14174,
+            0.441838,
+            0.817204,
+            0.498534
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00029",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/e3d560ab8a08b3010729e183078da534/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.095797,
+            0.360704,
+            0.828935,
+            0.407625
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00030",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/39aa9b46c43003692c12f31ba9aa5269/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.393939,
+            0.99609,
+            0.607038
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00031",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/873f10de1425effa60f4b639653d9e99/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.039101,
+            0.467253,
+            0.828935,
+            0.595308
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00032",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/72fa46de74c2c593033820a0a3885ac4/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.416422,
+            0.001955,
+            0.541544,
+            1.0
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00033",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/9b251e9822d05e07a25e461f48ecf865/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.227761,
+            0.746823,
+            0.845552,
+            0.781036
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00034",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/a016f36b95c773bf475cfba0ffd45e04/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.418377,
+            0.531769,
+            0.518084,
+            1.0
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.954057,
+            0.088954,
+            0.977517
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00035",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/86a717d650e6fa0bcd0dcd40344e58da/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.656891,
+            0.538612,
+            0.766373,
+            0.965787
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00036",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/1cd2d2239328b42fffe66831337e192a/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.063539,
+            0.483871,
+            0.911046,
+            0.622678
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00037",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/c738cea1114c282b1e1485f9f8ed5a7d/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.523949,
+            0.0,
+            0.5826,
+            0.55132
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00038",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/4f2c3fbcc3d33b6b974f82d5ebc6acfb/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.497556,
+            0.317693,
+            0.612903,
+            0.872923
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00039",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/d50d91aa2476d8bea028e956e1bfda9b/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.475073,
+            0.940371,
+            0.564027
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00040",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/e482c429d960da72edd408deaac3b4c4/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.596285,
+            0.045943,
+            0.713587,
+            0.343109
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00041",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/a6629dfcaa234b98e292ef5926180149/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.277615,
+            0.218964,
+            0.368524,
+            0.72434
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00042",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/92ed5fdbdc26cdfe5a68d303110b5bce/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.408602,
+            0.0,
+            0.609971,
+            0.981427
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00043",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/0031670da62b7255b6436dff2b76709b/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.224829,
+            0.384164,
+            0.717498,
+            0.722385
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00044",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/8115cd3a9fcb351fb0a19b4486736aff/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.237537,
+            0.219941,
+            0.837732,
+            0.331378
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00045",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/b0f1a33e8a88f54288d47ca18dccbca0/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.506354,
+            0.032258,
+            0.534702,
+            0.968719
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00046",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/f39fc48162cb15d6fa17504c8ce82179/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.138807,
+            0.063539,
+            0.28739,
+            0.99609
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00047",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/20fdf8c8241e38a1c8a159a803b8539d/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.031281,
+            0.647116,
+            1.0,
+            0.816227
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00048",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/6b549cceb1f86c62320a0bc118df96f0/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.355816,
+            0.0,
+            0.576735,
+            0.993157
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00049",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/6ec498c59603f4fd4828b74a3e8a42ac/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.57869,
+            0.922776,
+            0.756598
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.820137,
+            0.652004,
+            0.896383
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.618768,
+            0.848485,
+            0.863148,
+            0.897361
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.58651,
+            0.657869,
+            0.658847,
+            0.989247
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00050",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/45c1e4b81ca8d520021a309a1bb2274e/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.035191,
+            0.565982,
+            0.682307,
+            0.626588
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00051",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/9e7dc175cdb48161c255184ad750a94e/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.127077,
+            0.087977,
+            0.349951,
+            1.0
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00052",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/874ef743133061d9d9bea8eda423465d/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.017595,
+            0.430108,
+            0.940371,
+            0.633431
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00053",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/1b5becedacd5a58b89ce460052b892b7/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.167155,
+            0.465298,
+            0.73998,
+            0.584555
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00054",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/23548ffe6b4b6bacbf583e4ae1962399/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.0,
+            0.981427,
+            0.334311
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.742913,
+            0.957967,
+            0.823069
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00055",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/39604a50417ee36b11aa47235b316ece/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.273705,
+            0.14956,
+            0.367546,
+            0.655914
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00056",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/6437ec8bd81bd42515e9d5034787850e/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.212121,
+            0.437928,
+            0.749756,
+            0.661779
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00057",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/76bd0b908eaf420a6872607ac5a5f130/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.355816,
+            0.0,
+            0.576735,
+            0.993157
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00058",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/86f511d140201b830a89e25bceadf6b5/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.241447,
+            0.437928,
+            0.770283,
+            0.661779
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00059",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/782f198393c1d579dc1a9fb2143ed3d2/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.473118,
+            0.041056,
+            0.557185,
+            1.0
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00060",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/1310de305aa966a4cbf79b8a04f9c44a/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.059629,
+            0.0,
+            0.140762,
+            0.983382
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.59433,
+            0.0,
+            0.800587,
+            0.995112
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00061",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/c8eb512cbe7d013fe1004b580a5af109/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.755621,
+            1.0,
+            0.815249
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00062",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/5e7b77db70a0deb83cbd7922a0242a28/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.469208,
+            0.297165,
+            0.565005,
+            0.88172
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00063",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/db1ad92a68a97bcb65420543d9ea4936/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.637341,
+            0.948192,
+            0.936461
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00064",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/ae2bd23a256d3336ed6af3db58b87be9/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.212121,
+            0.437928,
+            0.749756,
+            0.661779
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00065",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/0e389ce7f62a9abae49a78977430e9ac/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.148583,
+            0.623656,
+            0.868035,
+            0.650049
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00066",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/3a1e072a7d8ddfbe30b6d4ea8847028f/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.338221,
+            0.106549,
+            0.771261,
+            0.528837
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00067",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/d2446dd2f04b7047bcccc2b451933c8b/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.324536,
+            0.172043,
+            0.521994,
+            0.755621
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00068",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/8d278ae687da8f33f2e26aab672a52af/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.349951,
+            0.148583,
+            0.649071,
+            0.69306
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00069",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/18b3d6d182ab9a0a33fdeedbe9e4f1cf/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.43695,
+            0.246334,
+            0.726295,
+            0.773216
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00070",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/9b3000ddb02f5a3a19eb043a85dae59c/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.052786,
+            0.0,
+            0.410557,
+            0.926686
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.702835,
+            0.0,
+            0.966764,
+            0.98045
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00071",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/d2b77e6700aa4ec556a0b8ea8543e3c6/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.030303,
+            0.656891,
+            0.963832,
+            0.925709
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00072",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/903f108bd3e4285fa9c7f842379a77e3/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.276637,
+            0.505376,
+            0.853372,
+            0.674487
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00073",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/2a7c44e4d31c69e3eec7e5eeb765ba14/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.132942,
+            0.025415,
+            0.312805,
+            1.0
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.68915,
+            0.0,
+            0.962854,
+            0.914956
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00074",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/5923a8540d416061edcc968304b4c378/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.129032,
+            0.572825,
+            0.84653,
+            0.72434
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00075",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/a9d427ddbfdc0e9ec558995c9df42ed3/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.151515,
+            0.443793,
+            0.73216,
+            0.654936
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00076",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/e75ad3d9343cb235d37525b6222fa2fc/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.128055,
+            0.342131,
+            0.821114,
+            0.490714
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00077",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/71def6e68292e0f0aae08ab2396bfc96/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.186706,
+            0.498534,
+            0.737048,
+            0.662757
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00078",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/738d14b60882621466f5cab7bdb7c736/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.280547,
+            0.112414,
+            0.607038,
+            0.68915
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00079",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/ebf4cb4b685ba563c683d1934c59ffb9/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.217009,
+            0.565005,
+            0.887586,
+            0.669599
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00080",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/d735ea29455b0f2b2d41ab3e29613d2d/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.237537,
+            0.476051,
+            0.779081,
+            0.575758
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00081",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/4c060281cefe8b6f52d2792e375d63f9/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.227761,
+            0.454545,
+            0.764418,
+            0.644184
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00082",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/4026b596b18db6c0e7f47d020528144c/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.28739,
+            0.352884,
+            0.844575,
+            0.663734
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00083",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/2a46c2a0696894ab853afdfaef974640/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.237537,
+            0.476051,
+            0.779081,
+            0.575758
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00084",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/21487ffb08932a554b96b160c11aac04/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.329423,
+            0.29912,
+            0.864125,
+            0.666667
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00085",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/84ca21aa49af8702bb8b90f2b6c29a44/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.347019,
+            0.187683,
+            0.524927,
+            0.738025
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00086",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/7e151de96fe63501090bd20c402b176c/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.26784,
+            0.474096,
+            0.815249,
+            0.526882
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00087",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/202532bb3e11a12c53dc4681c80fce40/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.1652,
+            0.493646,
+            0.861193,
+            0.527859
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00088",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/d854b2595d2f648b26a2e384c442c2d5/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.27566,
+            0.428152,
+            0.768328,
+            0.699902
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00089",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/ed0ce83f224e8d1cdcd521f3978608d1/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.001955,
+            0.690127,
+            1.0,
+            0.766373
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00090",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/1b71cf4fc86e6fd3c86751a6e00161af/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.674487,
+            0.999022,
+            0.778104
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00091",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/8797887c6a07c3accfdffdf7a7963ecd/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.57869,
+            0.922776,
+            0.756598
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.820137,
+            0.652004,
+            0.896383
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.618768,
+            0.848485,
+            0.863148,
+            0.897361
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.58651,
+            0.657869,
+            0.658847,
+            0.989247
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00092",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/4ba4ffc522173fde9950dfd01c7e9a6b/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.311828,
+            0.465298,
+            0.887586,
+            0.604106
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00093",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/cb5f1dbb11c995db2c745e3e16a87554/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.16911,
+            0.615836,
+            0.843597,
+            0.675464
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00094",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/6df7aa97dc8c3e8800e75fdb391e0913/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.277615,
+            0.520039,
+            0.85826,
+            0.608016
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00095",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/8129f4a63a56cbb0963202cf0113cb45/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.043988,
+            0.346041,
+            0.763441,
+            0.380254
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00096",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/d81048fda0106c2dd4959b5d9db8e795/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.036168,
+            0.0,
+            0.096774,
+            0.999022
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.564027,
+            0.001955,
+            0.751711,
+            1.0
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00097",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/4ae2ab3efd7f0fb9702884a0165ebb07/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.151515,
+            0.443793,
+            0.73216,
+            0.654936
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00098",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/95a1b55ada330cc48b81064845f569bd/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.341153,
+            0.209189,
+            0.771261,
+            0.667644
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00099",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/75cc58e996eb8271657660a385868cab/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.347019,
+            0.235582,
+            0.523949,
+            0.809384
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00100",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/51bbab654265d4cdfa27eb4da97ad35c/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.4565,
+            0.241447,
+            0.475073,
+            0.788856
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00101",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/30fbb988cf222e66ac110f51be504912/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.312805,
+            0.16129,
+            0.628543,
+            0.73216
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00102",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/4508402cecabbba1dc8531d057529c44/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.172043,
+            0.495601,
+            0.84262,
+            0.558162
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00103",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/c61187e9ac75f62b5ff8d975c0ea3a7d/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.637341,
+            0.135875,
+            0.812317,
+            0.868035
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00104",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/cfebcd888ddad25a99f0cfd4994714b8/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.301075,
+            0.964809,
+            0.346041
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.678397,
+            0.956989,
+            0.965787
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00105",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/b937c13797647633b7bccb8548723c26/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.148583,
+            0.587488,
+            0.831867,
+            0.624633
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00106",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/bca1f1b242a07d297ed5b920fe8ac2ed/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.30694,
+            0.098729,
+            0.569892,
+            0.953079
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00107",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/4e7444e55b9ab2377cfe430180493f8e/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.214076,
+            0.469208,
+            0.884653,
+            0.573803
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00108",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/a94a4fba26a8c924c98b806de1a7c920/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.278592,
+            0.345064,
+            0.808407,
+            0.717498
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00109",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/f8367b75d8a095f7de748ab2833ba81c/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.278592,
+            0.345064,
+            0.808407,
+            0.717498
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00110",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/a5e06a55fa9388ccf047e970d5a0360e/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.312805,
+            0.16129,
+            0.628543,
+            0.73216
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00111",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/c8bcd295b69f4622784d1f6870106856/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.385142,
+            0.113392,
+            0.7087,
+            0.926686
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00112",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/18fa5b0bbfdd12c4b54721e2829413e6/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.190616,
+            0.053763,
+            0.978495,
+            0.903226
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00113",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/4df84a2ffe449047970d0de9ef6c8242/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.449658,
+            0.168133,
+            0.580645,
+            0.848485
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00114",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/64958aab65dc1c9ec3a120cb1113adb5/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.349951,
+            0.096774,
+            0.817204,
+            0.57869
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00115",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/aa1e9453e6e701c4a48d78fc094ff5d4/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.319648,
+            0.206256,
+            0.562072,
+            0.85044
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00116",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/78e6ee3423bfeb912f1b32b3ee60858a/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.129032,
+            0.572825,
+            0.84653,
+            0.72434
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00117",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/afafb0a2cbd3ab3fa08d82ce42d09848/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.453568,
+            0.179863,
+            0.506354,
+            0.8348
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00118",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/a0e6dee76b2baaa304b684ebd387b4c4/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.278592,
+            0.345064,
+            0.808407,
+            0.717498
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00119",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/a053e817b11b069a96e3045130c68faa/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.488759,
+            0.099707,
+            0.845552,
+            0.803519
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00120",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/a3492b647d475f6118850b10ce147b86/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.340176,
+            0.385142,
+            1.0,
+            0.857283
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00121",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/9ed868e4cf609fe8fe2936d928186f31/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.043988,
+            0.346041,
+            0.763441,
+            0.380254
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00122",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/dd639058f76d5d33eed50c5454b14305/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.415445,
+            0.0,
+            0.726295,
+            0.807429
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00123",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/010e1dd1aec5f9c5f768f4341a5de3d9/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.159335,
+            0.604106,
+            0.892473,
+            0.649071
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00124",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/7664bf06769fb8b4637b3a47b5d3424a/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.12219,
+            0.515152,
+            0.826002,
+            0.536657
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00125",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/680da5d57d53632c3c333d42605ed8c9/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.29912,
+            0.190616,
+            0.424242,
+            0.861193
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00126",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/fa8641e08ec2ddb27cdadd4513aaab0a/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.12219,
+            0.515152,
+            0.826002,
+            0.536657
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00127",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/2c564d488356f22a94dab221bd7bd232/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.449658,
+            0.168133,
+            0.580645,
+            0.848485
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00128",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/12e493745bcf4bbf3be2f24c32c30f54/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.29912,
+            0.190616,
+            0.424242,
+            0.861193
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00129",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/9e84244d9bd45f71fa20895feae8e1d3/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.025415,
+            0.55523,
+            1.0,
+            0.959922
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00130",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/a119a5c4114ec24c1bb7330b02734212/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.492669,
+            0.85826,
+            0.635386
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00131",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/986c8ce4ad5ba44b7ac77e1547433859/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.280547,
+            0.112414,
+            0.607038,
+            0.68915
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00132",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/8dd0437254e6072583fbdd5c2924e681/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.341153,
+            0.121212,
+            0.812317,
+            0.55132
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00133",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/59a72d80eda315513e0df050e963a450/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.27566,
+            0.29521,
+            0.494624,
+            1.0
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00134",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/2498d2e15cf9a63f30eaf39c25bbdc38/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.138807,
+            0.437928,
+            0.922776,
+            0.521017
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00135",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/ebbc84746226a9d5d2d2a736b287136a/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.110459,
+            0.699902,
+            0.853372,
+            0.746823
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00136",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/f5a107e6dff0ce0541f7582022856103/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.338221,
+            0.674487,
+            0.478983
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00137",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/856b55ccf8e4259b5d99bafc644d19ba/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.175953,
+            0.650049,
+            0.913978,
+            0.694037
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00138",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/7c9a83d4b69c02940ad8929de536b1eb/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.451613,
+            0.120235,
+            0.667644,
+            0.970674
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00139",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/b7cb64c6a2d557ff13add73dce94619a/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.038123,
+            0.498534,
+            0.890518,
+            0.539589
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00140",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/d79d2ee491a38859df5ce7f5f36d69f7/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.29912,
+            0.190616,
+            0.424242,
+            0.861193
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00141",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/722b436ec054efeae57b6b35fce10436/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.519062,
+            0.199413,
+            0.71261,
+            0.87781
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00142",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/656e7e8c124fe457dbbbd51527fd1f1a/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.13783,
+            0.531769,
+            0.836755,
+            0.588465
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00143",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/07a370385b327e3676acc1ff4fd96436/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.307918,
+            0.058651,
+            0.459433,
+            0.812317
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00144",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/68d67a7f74615dfe69e6d0785ea49b18/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.248289,
+            0.686217,
+            0.472141
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00145",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/533eb8cd838f15e1848113ae2bf625d3/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.12219,
+            0.449658,
+            0.891496,
+            0.615836
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00146",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/3562ca0800ee6427e5b0ac96951d8fd2/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.030303,
+            0.451613,
+            0.865103,
+            0.550342
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00147",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/d826e68792de1dd0eef98fff5272aa43/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.15738,
+            0.579668,
+            0.839687,
+            0.652004
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00148",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/46d302cb7fab9e45f90419034b8fd545/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.139785,
+            0.383187,
+            0.864125,
+            0.490714
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00149",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/b89ae42a19aa5f36b613bf7906ac0fc2/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.473118,
+            0.197458,
+            0.702835,
+            0.898338
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00150",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/c55fd5623b677dab49c1c2b0aba40e47/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.397849,
+            0.029326,
+            0.454545,
+            0.878788
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00151",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/8d063b3f61931c69868991ca42aada9e/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.333333,
+            0.5826,
+            0.711632,
+            0.608993
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00152",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/9ade5d37e357f43bcc642ea537c9758d/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.307918,
+            0.058651,
+            0.459433,
+            0.812317
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00153",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/648289f42fe7caed78869c83a0dbea70/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.56305,
+            0.1261,
+            0.644184,
+            0.800587
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00154",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/15bf2c746b34b0976aadfeb0c646e753/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.217009,
+            0.565005,
+            0.887586,
+            0.669599
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00155",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/1f99c2fececa32c7b77533edc48e00d9/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.248289,
+            0.686217,
+            0.472141
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00156",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/08772c0e3026ae90f60ec5216a4c5bee/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.128055,
+            0.342131,
+            0.821114,
+            0.490714
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00157",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/17cd675cdbcb7cff2e00c0421728871a/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.163245,
+            0.56696,
+            0.880743,
+            0.699902
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00158",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/37b6189adc96b927fb9b5704b6e01d4a/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.038123,
+            0.498534,
+            0.890518,
+            0.539589
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00159",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/bdb21aab2e3def38e79b17e69ddab147/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.148583,
+            0.623656,
+            0.868035,
+            0.650049
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00160",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/6928d80f933a4a9e546278599b412aaf/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.446725,
+            0.064516,
+            0.699902,
+            0.807429
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00161",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/a84e94cd19d0dab449d419bc76050100/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.073314,
+            0.482893,
+            0.920821,
+            0.592375
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00162",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/1d02428bc8aa6815f1f50afee30d09ca/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.113392,
+            0.395894,
+            0.843597,
+            0.432063
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00163",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/6bca8efe4535248c6587dd667999aa06/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.550342,
+            0.993157,
+            0.587488
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.040078,
+            0.826002,
+            0.921799,
+            0.912023
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00164",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/e4a25486b6455a6a141908a7e4a6f949/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.470186,
+            0.045943,
+            0.573803,
+            0.880743
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00165",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/ed5e8d1f33c8b5ef119ae2afe240753d/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.001955,
+            0.477028,
+            1.0,
+            0.597263
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00166",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/64f2a45c859c075b13a10b80112431ca/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.001955,
+            0.380254,
+            1.0,
+            0.463343
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00167",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/aa23e6460afb046e2f55ccb346685475/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.286413,
+            0.192571,
+            0.522972,
+            0.841642
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00168",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/90f7e61b44b6d14c544f9ee9bd257b19/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.646139,
+            0.916911,
+            0.924731
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00169",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/bb0fe6cee4eba1637192580b94d64205/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.102639,
+            0.553275,
+            0.826979,
+            0.637341
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00170",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/3bcf5aa02ca5260e4ef6accbbf688311/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.437928,
+            0.997067,
+            0.748778
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00171",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/f452b60adcc597ce0fad33b33eac9660/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.0,
+            0.936461,
+            0.261975
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.025415,
+            0.496579,
+            1.0,
+            0.803519
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00172",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/7fa73882678c52b4c034646683af00c6/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.293255,
+            0.997067,
+            0.615836
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00173",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/6b2354b0201f2c7c7a0e7b2e388a9561/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.02737,
+            0.174976,
+            1.0,
+            0.442815
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.441838,
+            0.964809,
+            0.835777
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.746823,
+            0.150538,
+            0.837732,
+            0.380254
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00174",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/e0ece2377522a041ef709814b52b8f89/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.084066,
+            0.479961,
+            0.868035,
+            0.540567
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00175",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/cdad7514d1a86c0aa822f1f0e1f73152/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.058651,
+            0.841642,
+            1.0,
+            0.890518
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00176",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/a336cda1e6d81c65875d673c430b43c2/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.13392,
+            0.0,
+            0.829912,
+            0.193548
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00177",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/0f2757a05d5defbcf12f65df7ae57728/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.104594,
+            1.0,
+            0.56305
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00178",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/954bef0dfb7b7f469ee446650b8124e7/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.233627,
+            1.0,
+            0.379277
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.0,
+            0.29912,
+            0.082111
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.00391,
+            0.56696,
+            1.0,
+            0.678397
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.69306,
+            0.095797,
+            0.734115,
+            0.319648
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00179",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/bd927468a39af62a83ebc8ec12039827/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.250244,
+            0.993157,
+            0.561095
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00180",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/ea62fa79de2db0f39fde15784690638e/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.821114,
+            0.564027,
+            1.0,
+            0.628543
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.00782,
+            0.047898,
+            0.018573,
+            0.066471
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.249267,
+            0.59824,
+            0.652981,
+            0.658847
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.634409,
+            0.091887,
+            0.679374
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00181",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/fb5e03dd1195c79280eecb4421356ab1/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.595308,
+            0.995112,
+            0.767351
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.807429,
+            0.84653,
+            1.0
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.795699,
+            0.765396,
+            1.0,
+            0.841642
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.686217,
+            0.627566,
+            0.911046,
+            1.0
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00182",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/36ff852e277c4f8d8607a53d5be914fb/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.031281,
+            0.0,
+            0.224829,
+            0.973607
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.084066,
+            0.406647,
+            0.659824,
+            0.581623
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.066471,
+            0.065494,
+            0.113392,
+            0.43304
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00183",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/f54b41521a74b4b832084d70599a96da/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.101662,
+            1.0,
+            0.646139
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00184",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/11297f1c7d2f584b2e43af498df61e55/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.467253,
+            0.995112,
+            0.55523
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00185",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/d7a4c3c82b75064bf73aafd1e300dff2/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.380254,
+            0.995112,
+            0.474096
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00186",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/12b9e0b370a3197277872524904dd7c3/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.0,
+            0.936461,
+            0.261975
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.025415,
+            0.496579,
+            1.0,
+            0.803519
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00187",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/7b0124e0ad99408b89c86db8e539a93e/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.001955,
+            0.380254,
+            1.0,
+            0.463343
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00188",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/c07fa71345643fcb485dff6a854a3be6/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.001955,
+            0.5826,
+            1.0,
+            0.652981
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.001955,
+            0.051808,
+            1.0,
+            0.104594
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00189",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/7043e63ac8b218b9ce56d65bc3dd8709/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.00782,
+            0.363636,
+            1.0,
+            0.520039
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00190",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/09a46ff2d962d44231b2aba02e19ea2e/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.025415,
+            0.416422,
+            1.0,
+            0.713587
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.758553,
+            0.651026,
+            0.85435,
+            1.0
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00191",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/007f2361e67d782eabbda93f16ed7a9b/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.001955,
+            0.01564,
+            1.0,
+            0.30694
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.592375,
+            1.0,
+            0.639296
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00192",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/3e3a6efb63ba8204ec479cec23916c34/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.0,
+            0.001955,
+            0.001955
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00193",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/ef1b2a0ff9655d50f991b97537e433a2/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.284457,
+            0.381232,
+            0.391007
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.01564,
+            0.897361,
+            0.545455,
+            0.973607
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00194",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/74500380923633d326069b958f9d7259/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.233627,
+            1.0,
+            0.379277
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.0,
+            0.29912,
+            0.082111
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.00391,
+            0.56696,
+            1.0,
+            0.678397
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.69306,
+            0.095797,
+            0.734115,
+            0.319648
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00195",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/2f8cfd58c8b280bd6b54d161943d1882/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.626588,
+            1.0,
+            0.673509
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00196",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/9811ded0c58c486d9bce9322429ffbba/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.324536,
+            0.941349,
+            0.887586
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00197",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/3b347b62cf6e2f11edaa6302112ea8a1/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.113392,
+            0.983382,
+            0.446725
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.684262,
+            0.645161,
+            0.983382
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00198",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/c7f8376052dde29317580ea85f452782/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.365591,
+            0.695992,
+            0.426197
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.805474,
+            0.766373,
+            0.889541
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00199",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/adac8aefc3ee43d8b516172ce477c308/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.029326,
+            0.154448,
+            0.27175
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.084066,
+            0.0,
+            0.8739,
+            0.699902
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00200",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/68a3ee1ff240bfd8b3b6d82363a3cee3/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.600196,
+            0.510264,
+            1.0
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.0,
+            0.001955,
+            0.001955
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "drywall_join_detect_valid_00201",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/f33e8f7c8b0861c442850a47ffb0e3d1/transformed.jpg",
+      "prompt": "detect drywall-join",
+      "objects": [
+        {
+          "label": "drywall_joint",
+          "source_label": "drywall-join",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.380254,
+            1.0,
+            0.851417
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    }
+  ]
+}

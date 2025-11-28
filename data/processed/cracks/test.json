@@ -1,0 +1,105 @@
+{
+  "dataset": "cracks",
+  "split": "test",
+  "num_samples": 4,
+  "label_frequencies": {
+    "drywall_crack": 6
+  },
+  "reference_resolution": 1024,
+  "samples": [
+    {
+      "id": "cracks_test_00000",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/5aabdac3fae3fd5b9edd061419b9f2b4/transformed.jpg",
+      "prompt": "detect NewCracks - v2 2024-05-18 10-54pm",
+      "objects": [
+        {
+          "label": "drywall_crack",
+          "source_label": "NewCracks - v2 2024-05-18 10-54pm",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.130987,
+            0.993157,
+            0.953079
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_crack",
+          "source_label": "NewCracks - v2 2024-05-18 10-54pm",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.119257,
+            0.975562,
+            0.958944
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "cracks_test_00001",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/66ecf57fe78da2cc077ac3a35047dbb1/transformed.jpg",
+      "prompt": "detect NewCracks - v2 2024-05-18 10-54pm",
+      "objects": [
+        {
+          "label": "drywall_crack",
+          "source_label": "NewCracks - v2 2024-05-18 10-54pm",
+          "bbox_norm_xyxy": [
+            0.0,
+            0.400782,
+            0.981427,
+            0.55132
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "cracks_test_00002",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/bf329bd4a5738897e4295bf8b52f45b9/transformed.jpg",
+      "prompt": "detect NewCracks - v2 2024-05-18 10-54pm",
+      "objects": [
+        {
+          "label": "drywall_crack",
+          "source_label": "NewCracks - v2 2024-05-18 10-54pm",
+          "bbox_norm_xyxy": [
+            0.373412,
+            0.518084,
+            0.863148,
+            0.572825
+          ],
+          "bbox_space": "relative_0_1"
+        },
+        {
+          "label": "drywall_crack",
+          "source_label": "NewCracks - v2 2024-05-18 10-54pm",
+          "bbox_norm_xyxy": [
+            0.048876,
+            0.450635,
+            0.539589,
+            0.535679
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "cracks_test_00003",
+      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/3d9e36ced6eba26c61766772021d6008/transformed.jpg",
+      "prompt": "detect NewCracks - v2 2024-05-18 10-54pm",
+      "objects": [
+        {
+          "label": "drywall_crack",
+          "source_label": "NewCracks - v2 2024-05-18 10-54pm",
+          "bbox_norm_xyxy": [
+            0.284457,
+            0.44477,
+            1.0,
+            0.595308
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    }
+  ]
+}

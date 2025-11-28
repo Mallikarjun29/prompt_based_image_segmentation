@@ -42,6 +42,19 @@ cd data/raw && unzip -o drywall.zip && rm drywall.zip
 Keep crack-only exports in their own folder (e.g., `data/raw/cracks/`) so augmentation scripts can
 balance classes. Update `configs/base.yaml` → `paths.raw_data_dir` if you prefer a different layout.
 
+### Converting OpenAI JSONL annotations
+Roboflow's "OpenAI" export stores annotations in conversational JSONL files. Convert them into the
+project's processed format (normalized xyxy boxes + canonical labels) via:
+
+```bash
+source .venv/bin/activate
+python scripts/convert_openai_jsonl.py            # converts both drywall + crack datasets
+python scripts/convert_openai_jsonl.py --dataset cracks  # run per dataset if needed
+```
+
+Outputs land in `data/processed/<dataset>/<split>.json` with prompt text, remote `image_url`, and
+label frequencies for quick sanity checks.
+
 ## Prompt Templates
 Store reusable prompt sets inside `data/prompts/`. The `configs/base.yaml` file expects each entry to
 have a `label` (used downstream for metrics) and a `text` field (textual description passed into the
