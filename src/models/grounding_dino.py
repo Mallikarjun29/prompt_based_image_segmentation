@@ -62,16 +62,84 @@ class GroundingDINOModel:
         text_threshold: float,
         top_k: int | None = None,
     ) -> List[Detection]:
-        boxes, logits, phrases = self.model.predict_with_caption(
+        res = self.model.predict_with_caption(
             image=image_rgb,
             caption=prompt,
             box_threshold=box_threshold,
             text_threshold=text_threshold,
         )
+
+        # Debugging assistance: if the returned structure is unexpected, output a short
+        # summary to stderr to help diagnose shape/typing issues.
+        import sys
+        if isinstance(res, (tuple, list)) and len(res) <= 5:
+            types = [type(x).__name__ for x in res]
+            print(f"[groundingdino] predict_with_caption returned {len(res)} elements: {types}", file=sys.stderr)
+            for i, x in enumerate(res):
+                try:
+                    length = getattr(x, 'shape', None) or (len(x) if hasattr(x, '__len__') else None)
+                except Exception:
+                    length = None
+                print(f"  element {i}: type={type(x).__name__} info={length}", file=sys.stderr)
+
+        # GroundingDINO's inference API may return either (boxes, logits, phrases)
+        # or (boxes, logits) depending on the version. Handle both safely.
+        if isinstance(res, (tuple, list)):
+            if len(res) == 3:
+                boxes, logits, phrases = res
+            elif len(res) == 2:
+                # Some GroundingDINO versions return a Detections-like object and a list
+                # of phrases. Try to extract box coordinates and scores from that object.
+                boxes_obj, phrases = res
+                # Try common attributes used by detection outputs
+                if hasattr(boxes_obj, "boxes"):
+                    raw_boxes = boxes_obj.boxes
+                elif hasattr(boxes_obj, "pred_boxes"):
+                    raw_boxes = boxes_obj.pred_boxes
+                elif hasattr(boxes_obj, "xyxy"):
+                    raw_boxes = boxes_obj.xyxy
+                else:
+                    raw_boxes = boxes_obj
+
+                # Convert raw_boxes to a list/array of xyxy floats
+                try:
+                    if hasattr(raw_boxes, "cpu") and hasattr(raw_boxes, "numpy"):
+                        raw_boxes_arr = raw_boxes.cpu().numpy()
+                    else:
+                        raw_boxes_arr = np.asarray(raw_boxes)
+                except Exception:
+                    raw_boxes_arr = np.asarray(list(raw_boxes))
+
+                boxes = [rb for rb in raw_boxes_arr]
+
+                # scores/logits
+                if hasattr(boxes_obj, "scores"):
+                    scores = boxes_obj.scores
+                    try:
+                        if hasattr(scores, "cpu") and hasattr(scores, "numpy"):
+                            logits = [float(s) for s in scores.cpu().numpy()]
+                        else:
+                            logits = [float(s) for s in scores]
+                    except Exception:
+                        logits = [1.0 for _ in boxes]
+                else:
+                    logits = [1.0 for _ in boxes]
+            else:
+                raise ValueError(
+                    f"Unexpected return shape from predict_with_caption: {len(res)} elements"
+                )
+        else:
+            raise ValueError("predict_with_caption returned unsupported type")
         h, w = image_rgb.shape[:2]
         detections: List[Detection] = []
+        def _box_to_xyxy(box_raw) -> np.ndarray:
+            arr = np.asarray(box_raw, dtype=np.float32).ravel()
+            if arr.size < 4:
+                raise ValueError(f"Box has fewer than 4 values: {arr}")
+            return arr[:4]
+
         for idx, box in enumerate(boxes):
-            box = np.array(box, dtype=np.float32)
+            box = _box_to_xyxy(box)
             rel = self._to_relative(box, w, h)
             abs_box = self._to_absolute(rel, w, h)
             detections.append(

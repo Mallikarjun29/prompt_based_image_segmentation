@@ -59,9 +59,23 @@ class SamSegmentor:
         if boxes.size == 0:
             return []
         self.predictor.set_image(image_rgb)
-        masks, scores, _ = self.predictor.predict(box=boxes, multimask_output=multimask_output)
         results: List[SamMask] = []
-        for idx, mask in enumerate(masks):
-            score = float(scores[idx]) if scores is not None else 0.0
-            results.append(SamMask(mask=mask, score=score, box_xyxy=boxes[idx]))
+
+        # Run SAM per box to avoid shape/concatenation issues in some predictor implementations.
+        for i in range(boxes.shape[0]):
+            box = boxes[i : i + 1].astype(np.float32)
+            masks_out, scores_out, _ = self.predictor.predict(box=box, multimask_output=multimask_output)
+            # If multimask_output is True, predictor returns multiple masks per box; pick highest scoring mask
+            if masks_out is None or len(masks_out) == 0:
+                continue
+            # Choose best mask (by score) among returned masks
+            if scores_out is not None and len(scores_out) > 0:
+                best_idx = int(np.argmax(scores_out))
+                mask = masks_out[best_idx]
+                score = float(scores_out[best_idx])
+            else:
+                mask = masks_out[0]
+                score = float(scores_out[0]) if scores_out is not None else 0.0
+            results.append(SamMask(mask=mask, score=score, box_xyxy=box.ravel()))
+
         return results

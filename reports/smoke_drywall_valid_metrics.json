@@ -1,0 +1,172 @@
+{
+  "dataset": "drywall_join_detect",
+  "split": "valid",
+  "prompt_label": "exposed_joint_tape",
+  "target_label": "drywall_joint",
+  "num_evaluated": 20,
+  "missing_predictions": 0,
+  "mean_iou": 0.1791598080784446,
+  "mean_dice": 0.27478255389396705,
+  "details": [
+    {
+      "sample_id": "drywall_join_detect_valid_00000",
+      "iou": 0.14102204408817634,
+      "dice": 0.2471854857122785,
+      "gt_pixels": 56250,
+      "pred_pixels": 114561,
+      "mask": "outputs/smoke/drywall_joints/drywall_join_detect_valid_00000__segment_drywall_seam_or_taping_area.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00001",
+      "iou": 0.5800719902790197,
+      "dice": 0.7342348878377202,
+      "gt_pixels": 151806,
+      "pred_pixels": 261702,
+      "mask": "outputs/smoke/drywall_joints/drywall_join_detect_valid_00001__segment_drywall_seam_or_taping_area.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00002",
+      "iou": 0.08202965940287137,
+      "dice": 0.1516218316014373,
+      "gt_pixels": 12495,
+      "pred_pixels": 152257,
+      "mask": "outputs/smoke/drywall_joints/drywall_join_detect_valid_00002__segment_drywall_seam_or_taping_area.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00003",
+      "iou": 0.06133887690121573,
+      "dice": 0.1155877321300176,
+      "gt_pixels": 4662,
+      "pred_pixels": 76004,
+      "mask": "outputs/smoke/drywall_joints/drywall_join_detect_valid_00003__segment_drywall_seam_or_taping_area.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00004",
+      "iou": 0.16215066734715972,
+      "dice": 0.27905274574647176,
+      "gt_pixels": 42534,
+      "pred_pixels": 258040,
+      "mask": "outputs/smoke/drywall_joints/drywall_join_detect_valid_00004__segment_drywall_seam_or_taping_area.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00005",
+      "iou": 0.25011769183769544,
+      "dice": 0.400150631369784,
+      "gt_pixels": 74731,
+      "pred_pixels": 174885,
+      "mask": "outputs/smoke/drywall_joints/drywall_join_detect_valid_00005__segment_drywall_seam_or_taping_area.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00006",
+      "iou": 3.450869964318004e-05,
+      "dice": 6.901501766784453e-05,
+      "gt_pixels": 37944,
+      "pred_pixels": 106952,
+      "mask": "outputs/smoke/drywall_joints/drywall_join_detect_valid_00006__segment_drywall_seam_or_taping_area.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00007",
+      "iou": 0.00015031064199345313,
+      "dice": 0.0003005761041997161,
+      "gt_pixels": 29252,
+      "pred_pixels": 30633,
+      "mask": "outputs/smoke/drywall_joints/drywall_join_detect_valid_00007__segment_drywall_seam_or_taping_area.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00008",
+      "iou": 0.20055578340003677,
+      "dice": 0.3341048973702035,
+      "gt_pixels": 28363,
+      "pred_pixels": 141422,
+      "mask": "outputs/smoke/drywall_joints/drywall_join_detect_valid_00008__segment_drywall_seam_or_taping_area.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00009",
+      "iou": 0.34863641534885986,
+      "dice": 0.5170206163514812,
+      "gt_pixels": 85805,
+      "pred_pixels": 246116,
+      "mask": "outputs/smoke/drywall_joints/drywall_join_detect_valid_00009__segment_drywall_seam_or_taping_area.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00010",
+      "iou": 0.08909887540422702,
+      "dice": 0.1636194424884652,
+      "gt_pixels": 16614,
+      "pred_pixels": 186467,
+      "mask": "outputs/smoke/drywall_joints/drywall_join_detect_valid_00010__segment_drywall_seam_or_taping_area.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00011",
+      "iou": 0.06446542811183831,
+      "dice": 0.12112263378283289,
+      "gt_pixels": 10500,
+      "pred_pixels": 162878,
+      "mask": "outputs/smoke/drywall_joints/drywall_join_detect_valid_00011__segment_drywall_seam_or_taping_area.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00012",
+      "iou": 0.3106367229007725,
+      "dice": 0.47402414028695056,
+      "gt_pixels": 29264,
+      "pred_pixels": 80511,
+      "mask": "outputs/smoke/drywall_joints/drywall_join_detect_valid_00012__segment_drywall_seam_or_taping_area.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00013",
+      "iou": 0.2785125916249365,
+      "dice": 0.43568220360029236,
+      "gt_pixels": 57575,
+      "pred_pixels": 83358,
+      "mask": "outputs/smoke/drywall_joints/drywall_join_detect_valid_00013__segment_drywall_seam_or_taping_area.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00014",
+      "iou": 0.0,
+      "dice": 0.0,
+      "gt_pixels": 4662,
+      "pred_pixels": 59856,
+      "mask": "outputs/smoke/drywall_joints/drywall_join_detect_valid_00014__segment_drywall_seam_or_taping_area.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00015",
+      "iou": 0.15507107608455475,
+      "dice": 0.26850482069071063,
+      "gt_pixels": 36719,
+      "pred_pixels": 198517,
+      "mask": "outputs/smoke/drywall_joints/drywall_join_detect_valid_00015__segment_drywall_seam_or_taping_area.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00016",
+      "iou": 0.4379113868660209,
+      "dice": 0.6090937047525082,
+      "gt_pixels": 112960,
+      "pred_pixels": 199212,
+      "mask": "outputs/smoke/drywall_joints/drywall_join_detect_valid_00016__segment_drywall_seam_or_taping_area.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00017",
+      "iou": 0.0,
+      "dice": 0.0,
+      "gt_pixels": 44100,
+      "pred_pixels": 86497,
+      "mask": "outputs/smoke/drywall_joints/drywall_join_detect_valid_00017__segment_drywall_seam_or_taping_area.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00018",
+      "iou": 0.36117423184807496,
+      "dice": 0.5306803837414794,
+      "gt_pixels": 94786,
+      "pred_pixels": 222094,
+      "mask": "outputs/smoke/drywall_joints/drywall_join_detect_valid_00018__segment_drywall_seam_or_taping_area.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00019",
+      "iou": 0.060217900781795085,
+      "dice": 0.11359532929483826,
+      "gt_pixels": 3366,
+      "pred_pixels": 55897,
+      "mask": "outputs/smoke/drywall_joints/drywall_join_detect_valid_00019__segment_drywall_seam_or_taping_area.png"
+    }
+  ]
+}

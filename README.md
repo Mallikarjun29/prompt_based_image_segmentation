@@ -94,6 +94,25 @@ run time.
    Prompt labels come from `configs/base.yaml`. Ensure the referenced GroundingDINO config, checkpoints,
    and SAM checkpoints exist under `checkpoints/` before running.
 
+## Evaluation & Reporting
+- `src/utils/mask_metrics.py` implements IoU/Dice helpers for binary masks.
+- `scripts/eval_segmentation.py` compares predicted PNG masks against manifest-derived ground truth
+   (boxes rasterized to masks) and reports mean IoU/Dice plus per-sample stats:
+
+   ```bash
+   python scripts/eval_segmentation.py \
+         data/processed/drywall_join_detect/valid.json \
+         --mask-dir outputs/smoke/drywall_joints \
+         --prompt-label exposed_joint_tape \
+         --target-label drywall_joint \
+         --max-samples 200 \
+         --image-cache data/processed_images \
+         --output reports/drywall_valid_metrics.json
+   ```
+
+   Adjust `--target-label` for other datasets (e.g., `drywall_crack`) and remove `--max-samples` to
+   evaluate the full split.
+
 ## Next Steps
 - Implement data ingestion utilities under `src/data/`.
 - Wire a prompted segmentation pipeline (GroundingDINO → SAM) under `src/pipeline/`.

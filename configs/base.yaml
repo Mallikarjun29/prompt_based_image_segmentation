@@ -9,11 +9,23 @@ paths:
 
 prompts:
   - label: exposed_joint_tape
-    text: "highlight exposed drywall joint tape"
+    text: "segment drywall seam or taping area"
+    box_threshold: 0.28
+    text_threshold: 0.22
+    mask_threshold: 0.48
+    notes: "Dataset 1 bounding-box labels map to taping/joint seams."
   - label: screw_pop
-    text: "find screw pops or nail pops"
+    text: "find drywall screw pops or nail pops"
+    box_threshold: 0.32
+    text_threshold: 0.25
+    mask_threshold: 0.5
+    notes: "Placeholder prompt; requires dataset with fastener annotations."
   - label: crack
-    text: "segment drywall cracks or splits"
+    text: "segment wall crack or drywall crack"
+    box_threshold: 0.34
+    text_threshold: 0.22
+    mask_threshold: 0.45
+    notes: "Dataset 2 crack masks come straight from Roboflow export."
 
 models:
   detector:
@@ -23,9 +35,9 @@ models:
     box_threshold: 0.35
     text_threshold: 0.25
   segmentor:
-    name: sam_hq
-    model_type: sam_hq_vit_h
-    checkpoint_path: checkpoints/sam_hq_vit_h.pth
+    name: sam
+    model_type: vit_h
+    checkpoint_path: checkpoints/sam_vit_h_4b8939.pth
     mask_threshold: 0.5
     points_per_side: 64
     pred_iou_thresh: 0.88
