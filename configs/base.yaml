@@ -1,0 +1,40 @@
+experiment_name: drywall_qa_baseline
+random_seed: 42
+
+paths:
+  raw_data_dir: data/raw
+  processed_data_dir: data/processed
+  prompt_dir: data/prompts
+  output_dir: reports
+
+prompts:
+  - label: exposed_joint_tape
+    text: "highlight exposed drywall joint tape"
+  - label: screw_pop
+    text: "find screw pops or nail pops"
+  - label: crack
+    text: "segment drywall cracks or splits"
+
+models:
+  detector:
+    name: grounding_dino
+    checkpoint_path: checkpoints/groundingdino_swint_ogc.pth
+    box_threshold: 0.35
+    text_threshold: 0.25
+  segmentor:
+    name: sam_hq
+    checkpoint_path: checkpoints/sam_hq_vit_h.pth
+    points_per_side: 64
+    pred_iou_thresh: 0.88
+
+postprocessing:
+  min_mask_area: 1500
+  nms_iou_threshold: 0.5
+
+metrics:
+  defect_area_ratio:
+    critical: 0.08
+    warning: 0.03
+  crack_length_px:
+    critical: 400
+    warning: 200
