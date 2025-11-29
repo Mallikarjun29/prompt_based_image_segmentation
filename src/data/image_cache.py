@@ -23,8 +23,18 @@ class ImageCache:
         digest = hashlib.sha256(url.encode("utf-8")).hexdigest()
         return self.cache_dir / f"{digest}.jpg"
 
+    def cached_path(self, url: str) -> Path:
+        """Return the expected cache path without triggering a download."""
+
+        return self._path_for_url(url)
+
+    def has(self, url: str) -> bool:
+        """Check if a URL has already been cached locally."""
+
+        return self.cached_path(url).exists()
+
     def fetch(self, url: str, *, force: bool = False, timeout: float = 10.0) -> Path:
-        target_path = self._path_for_url(url)
+        target_path = self.cached_path(url)
         if target_path.exists() and not force:
             return target_path
 

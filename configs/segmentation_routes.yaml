@@ -1,0 +1,18 @@
+# Maps prompt labels to the inference engine + checkpoint to run.
+routes:
+  joint_latest:
+    engine: deeplab
+    checkpoint: checkpoints/deeplabv3_joint_latest.pth
+    mask_suffix: joint_latest
+    class_labels:
+      - drywall_joint
+    resize: [512, 512]
+    batch_size: 4
+  crack_latest:
+    engine: deeplab
+    checkpoint: checkpoints/deeplabv3_crack_latest.pth
+    mask_suffix: crack_latest
+    class_labels:
+      - drywall_crack
+    resize: [512, 512]
+    batch_size: 4

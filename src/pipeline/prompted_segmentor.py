@@ -23,6 +23,8 @@ class PromptConfig:
     text_threshold: float
     mask_threshold: float = 0.5
     top_k: int | None = None
+    min_mask_area: int = 0
+    multimask_output: bool = False
 
 
 class PromptedSegmentor:
@@ -77,12 +79,26 @@ class PromptedSegmentor:
             return None
 
         boxes_abs = [det.box_xyxy_abs for det in detections]
-        sam_masks = self.segmentor.predict_masks(image_rgb=image_rgb, boxes_xyxy_abs=boxes_abs)
+        sam_masks = self.segmentor.predict_masks(
+            image_rgb=image_rgb,
+            boxes_xyxy_abs=boxes_abs,
+            multimask_output=prompt_cfg.multimask_output,
+        )
         if not sam_masks:
             return None
 
-        # Use highest scoring SAM mask.
-        best_mask = max(sam_masks, key=lambda m: m.score)
-        binary_mask = (best_mask.mask > prompt_cfg.mask_threshold).astype(np.uint8) * 255
+        combined = np.zeros(image_rgb.shape[:2], dtype=np.uint8)
+        kept = 0
+        for sam_mask in sam_masks:
+            binary = (sam_mask.mask > prompt_cfg.mask_threshold).astype(np.uint8)
+            if binary.sum() < prompt_cfg.min_mask_area:
+                continue
+            combined = np.maximum(combined, binary)
+            kept += 1
+
+        if kept == 0:
+            return None
+
+        binary_mask = combined * 255
         Image.fromarray(binary_mask).save(mask_path)
         return mask_path

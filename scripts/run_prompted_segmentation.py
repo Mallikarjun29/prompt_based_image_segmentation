@@ -28,17 +28,52 @@ def load_config(path: Path) -> Dict[str, object]:
         return yaml.safe_load(fh)
 
 
-def build_prompt_config(config: Dict[str, object], label: str) -> PromptConfig:
+def build_prompt_config(
+    config: Dict[str, object],
+    label: str,
+    *,
+    box_threshold: float | None = None,
+    text_threshold: float | None = None,
+    mask_threshold: float | None = None,
+    top_k: int | None = None,
+    min_mask_area: int | None = None,
+    multimask_output: bool | None = None,
+) -> PromptConfig:
     prompts = {item["label"]: item for item in config.get("prompts", [])}
     if label not in prompts:
         raise KeyError(f"Prompt label '{label}' not found in config")
     entry = prompts[label]
+    detector_cfg = config["models"]["detector"]
+    segmentor_cfg = config["models"]["segmentor"]
+    post_cfg = config.get("postprocessing", {})
+
+    def _pick(override, entry_default, fallback):
+        if override is not None:
+            return override
+        if entry_default is not None:
+            return entry_default
+        return fallback
+
+    prompt_text = entry["text"]
+    resolved_box = _pick(box_threshold, entry.get("box_threshold"), detector_cfg.get("box_threshold", 0.35))
+    resolved_text = _pick(text_threshold, entry.get("text_threshold"), detector_cfg.get("text_threshold", 0.25))
+    resolved_mask = _pick(mask_threshold, entry.get("mask_threshold"), segmentor_cfg.get("mask_threshold", 0.5))
+    resolved_topk = top_k if top_k is not None else entry.get("top_k")
+    resolved_min_area = _pick(min_mask_area, entry.get("min_mask_area"), post_cfg.get("min_mask_area", 0))
+    resolved_multimask = (
+        multimask_output
+        if multimask_output is not None
+        else entry.get("multimask_output", segmentor_cfg.get("multimask_output", False))
+    )
+
     return PromptConfig(
-        text=entry["text"],
-        box_threshold=float(entry.get("box_threshold", config["models"]["detector"].get("box_threshold", 0.35))),
-        text_threshold=float(entry.get("text_threshold", config["models"]["detector"].get("text_threshold", 0.25))),
-        mask_threshold=float(entry.get("mask_threshold", config["models"]["segmentor"].get("mask_threshold", 0.5))),
-        top_k=entry.get("top_k"),
+        text=prompt_text,
+        box_threshold=float(resolved_box),
+        text_threshold=float(resolved_text),
+        mask_threshold=float(resolved_mask),
+        top_k=None if resolved_topk is None else int(resolved_topk),
+        min_mask_area=int(resolved_min_area),
+        multimask_output=bool(resolved_multimask),
     )
 
 
@@ -52,6 +87,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--device", default=None, help="Override torch device (cpu/cuda)")
     parser.add_argument("--max-samples", type=int, default=None)
     parser.add_argument("--overwrite", action="store_true")
+    parser.add_argument("--box-threshold", type=float, default=None)
+    parser.add_argument("--text-threshold", type=float, default=None)
+    parser.add_argument("--mask-threshold", type=float, default=None)
+    parser.add_argument("--top-k", type=int, default=None)
+    parser.add_argument("--min-mask-area", type=int, default=None)
+    parser.add_argument("--multimask-output", action="store_true")
     return parser.parse_args()
 
 
@@ -72,7 +113,16 @@ def main() -> None:
         device=args.device,
     )
     image_cache = ImageCache(args.image_cache)
-    prompt_cfg = build_prompt_config(config, args.prompt_label)
+    prompt_cfg = build_prompt_config(
+        config,
+        args.prompt_label,
+        box_threshold=args.box_threshold,
+        text_threshold=args.text_threshold,
+        mask_threshold=args.mask_threshold,
+        top_k=args.top_k,
+        min_mask_area=args.min_mask_area,
+        multimask_output=args.multimask_output if args.multimask_output else None,
+    )
 
     dataset = ProcessedDataset(args.manifest)
     pipeline = PromptedSegmentor(detector=detector, segmentor=segmentor, image_cache=image_cache)

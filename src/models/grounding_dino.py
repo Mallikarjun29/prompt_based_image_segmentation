@@ -69,19 +69,6 @@ class GroundingDINOModel:
             text_threshold=text_threshold,
         )
 
-        # Debugging assistance: if the returned structure is unexpected, output a short
-        # summary to stderr to help diagnose shape/typing issues.
-        import sys
-        if isinstance(res, (tuple, list)) and len(res) <= 5:
-            types = [type(x).__name__ for x in res]
-            print(f"[groundingdino] predict_with_caption returned {len(res)} elements: {types}", file=sys.stderr)
-            for i, x in enumerate(res):
-                try:
-                    length = getattr(x, 'shape', None) or (len(x) if hasattr(x, '__len__') else None)
-                except Exception:
-                    length = None
-                print(f"  element {i}: type={type(x).__name__} info={length}", file=sys.stderr)
-
         # GroundingDINO's inference API may return either (boxes, logits, phrases)
         # or (boxes, logits) depending on the version. Handle both safely.
         if isinstance(res, (tuple, list)):

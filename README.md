@@ -113,6 +113,102 @@ run time.
    Adjust `--target-label` for other datasets (e.g., `drywall_crack`) and remove `--max-samples` to
    evaluate the full split.
 
+   ### Hyper-parameter sweeps
+   - `scripts/hparam_sweep.py` automates a grid search over detector/segmentor thresholds, min mask
+      areas, and optional multimask unions. The script runs inference for each combination, evaluates
+      results, and writes ranked metrics to `reports/hparam_sweep.json`:
+
+      ```bash
+      python scripts/hparam_sweep.py \
+         data/processed/drywall_join_detect/valid.json \
+         --prompt-label exposed_joint_tape \
+         --target-label drywall_joint \
+         --mask-root outputs/sweeps/drywall_joint_valid \
+         --max-samples 100 \
+         --box-thresholds 0.25 0.35 0.45 \
+         --text-thresholds 0.15 0.25 0.35 \
+         --mask-thresholds 0.3 0.45 0.6 \
+         --top-ks 1 3 --min-mask-areas 500 2500 \
+         --multimask
+      ```
+
+      Narrow the grids as you converge; `--max-samples` keeps sweeps quick, while `--multimask` enables
+      SAM's multi-mask fusion for challenging prompts.
+
+### Fine-tuning a segmentation head
+- `scripts/train_segmentation.py` fine-tunes a DeepLabV3-ResNet50 head on box-derived drywall masks.
+   The dataset is built via `src/data/box_mask_dataset.py`, which rasterizes normalized boxes into
+   binary masks and (optionally) restricts samples to images already cached locally.
+- Example command (uses cached images only, 512×512 crops, and stores artifacts in `checkpoints/` and
+   `reports/`):
+
+   ```bash
+   python scripts/train_segmentation.py \
+         data/processed/drywall_join_detect/train.json \
+         data/processed/drywall_join_detect/valid.json \
+         --target-label drywall_joint \
+         --epochs 3 --batch-size 2 --lr 5e-4 \
+         --max-train-samples 40 --max-valid-samples 20 \
+         --resize 512 512 --cached-only --device cuda \
+         --output checkpoints/deeplab_drywall_joint.pth \
+         --metrics-output reports/finetune_deeplab_history.json
+   ```
+
+   Remove `--cached-only` once all manifest images are downloaded via
+   `scripts/download_processed_images.py`. The metrics JSON captures train/validation loss + IoU/Dice
+   per epoch; the checkpoint stores the best-performing weights.
+
+### Running the fine-tuned DeepLab model
+- `scripts/run_deeplab_segmentation.py` loads a fine-tuned checkpoint and converts every image from a
+   processed manifest into a binary mask. You can control the resize resolution, batch size, and how
+   the output files are named via `--mask-suffix`.
+- Example command (first 150 validation samples, CUDA, 512×512 crops):
+
+   ```bash
+   python scripts/run_deeplab_segmentation.py \
+         data/processed/drywall_join_detect/valid.json \
+         --checkpoint checkpoints/deeplab_drywall_joint.pth \
+         --output-dir outputs/deeplab/drywall_valid \
+         --mask-suffix deeplab_joint \
+         --resize 512 512 --batch-size 4 --device cuda --max-samples 150
+   ```
+
+- Evaluate those masks with the existing metrics CLI by pointing `--mask-dir` to the DeepLab output
+   directory and passing `--prompt-label`/`--prompt-text` that match the file suffix:
+
+   ```bash
+   python scripts/eval_segmentation.py \
+         data/processed/drywall_join_detect/valid.json \
+         --mask-dir outputs/deeplab/drywall_valid \
+         --prompt-label deeplab_joint --prompt-text deeplab_joint \
+         --target-label drywall_joint --image-cache data/processed_images \
+         --output reports/deeplab_valid_eval.json
+   ```
+
+   ### Routing DeepLab checkpoints per defect
+   - `configs/segmentation_routes.yaml` centralizes which inference engine + checkpoint should run for a
+      given logical prompt/defect label (e.g., `joint_latest`, `crack_latest`).
+   - `scripts/run_segmentation_router.py` reads that mapping and dispatches to the DeepLab runner. You
+      can still override resize, batch size, device, max samples, and output directory on the CLI.
+   - Example commands:
+
+     ```bash
+     # Joints – uses checkpoints/deeplabv3_joint_latest.pth defined in the routes file
+     python scripts/run_segmentation_router.py \
+        data/processed/drywall_join_detect/valid.json \
+        --prompt-label joint_latest \
+        --output-dir outputs/deeplab_joint/drywall_valid
+
+     # Cracks – same script, different prompt label and manifest
+     python scripts/run_segmentation_router.py \
+        data/processed/cracks/valid.json \
+        --prompt-label crack_latest \
+        --output-dir outputs/deeplab_crack/cracks_valid
+     ```
+
+     Extend `configs/segmentation_routes.yaml` with new entries if you train additional defect-specific
+     checkpoints, or adjust the defaults to change resize/batch-size settings.
+
 ## Next Steps
 - Implement data ingestion utilities under `src/data/`.
 - Wire a prompted segmentation pipeline (GroundingDINO → SAM) under `src/pipeline/`.

@@ -1,0 +1,11 @@
+{
+  "dataset": "drywall_join_detect",
+  "split": "valid",
+  "prompt_label": "exposed_joint_tape",
+  "target_label": "drywall_joint",
+  "num_evaluated": 0,
+  "missing_predictions": 120,
+  "mean_iou": 0.0,
+  "mean_dice": 0.0,
+  "details": []
+}

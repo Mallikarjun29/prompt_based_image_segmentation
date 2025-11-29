@@ -1,0 +1,1628 @@
+{
+  "dataset": "drywall_join_detect",
+  "split": "valid",
+  "prompt_label": "deeplab_joint",
+  "target_label": "drywall_joint",
+  "num_evaluated": 202,
+  "missing_predictions": 0,
+  "mean_iou": 0.7854479418306611,
+  "mean_dice": 0.8692400178066603,
+  "details": [
+    {
+      "sample_id": "drywall_join_detect_valid_00000",
+      "iou": 0.912770771636775,
+      "dice": 0.9543964025085023,
+      "gt_pixels": 56250,
+      "pred_pixels": 58719,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00000__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00001",
+      "iou": 0.9485815491084654,
+      "dice": 0.9736123689998706,
+      "gt_pixels": 151806,
+      "pred_pixels": 157354,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00001__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00002",
+      "iou": 0.7010469638049656,
+      "dice": 0.8242535082474589,
+      "gt_pixels": 12495,
+      "pred_pixels": 15938,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00002__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00003",
+      "iou": 0.6655523984623098,
+      "dice": 0.7991971901655796,
+      "gt_pixels": 4662,
+      "pred_pixels": 5303,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00003__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00004",
+      "iou": 0.5473412609378506,
+      "dice": 0.7074603059522946,
+      "gt_pixels": 42534,
+      "pred_pixels": 40224,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00004__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00005",
+      "iou": 0.7724086440748268,
+      "dice": 0.8715920526081767,
+      "gt_pixels": 74731,
+      "pred_pixels": 96193,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00005__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00006",
+      "iou": 0.8564448848839621,
+      "dice": 0.9226720295954216,
+      "gt_pixels": 37944,
+      "pred_pixels": 42609,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00006__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00007",
+      "iou": 0.6383214971431215,
+      "dice": 0.7792383830111687,
+      "gt_pixels": 29252,
+      "pred_pixels": 41571,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00007__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00008",
+      "iou": 0.7015261322318138,
+      "dice": 0.824584611359044,
+      "gt_pixels": 28363,
+      "pred_pixels": 40428,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00008__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00009",
+      "iou": 0.5322564445932374,
+      "dice": 0.6947354621628412,
+      "gt_pixels": 85805,
+      "pred_pixels": 97269,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00009__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00010",
+      "iou": 0.6418525414999405,
+      "dice": 0.7818638096616959,
+      "gt_pixels": 16614,
+      "pred_pixels": 24828,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00010__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00011",
+      "iou": 0.7156774058868555,
+      "dice": 0.834279688513952,
+      "gt_pixels": 10500,
+      "pred_pixels": 14156,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00011__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00012",
+      "iou": 0.7229625578041867,
+      "dice": 0.8392086694275696,
+      "gt_pixels": 29264,
+      "pred_pixels": 40037,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00012__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00013",
+      "iou": 0.8854392854392854,
+      "dice": 0.9392392449624687,
+      "gt_pixels": 57575,
+      "pred_pixels": 64856,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00013__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00014",
+      "iou": 0.5612115041995419,
+      "dice": 0.7189435930877078,
+      "gt_pixels": 4662,
+      "pred_pixels": 7606,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00014__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00015",
+      "iou": 0.7747672907747034,
+      "dice": 0.8730916946711473,
+      "gt_pixels": 36719,
+      "pred_pixels": 46601,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00015__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00016",
+      "iou": 0.797300731287235,
+      "dice": 0.8872201712355667,
+      "gt_pixels": 112960,
+      "pred_pixels": 141660,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00016__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00017",
+      "iou": 0.6806141547441551,
+      "dice": 0.8099588508437464,
+      "gt_pixels": 44100,
+      "pred_pixels": 61856,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00017__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00018",
+      "iou": 0.7999206410820416,
+      "dice": 0.8888398997426472,
+      "gt_pixels": 94786,
+      "pred_pixels": 113877,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00018__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00019",
+      "iou": 0.5827414772727273,
+      "dice": 0.7363697554408796,
+      "gt_pixels": 3366,
+      "pred_pixels": 5548,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00019__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00020",
+      "iou": 0.5909787397050373,
+      "dice": 0.7429121772106182,
+      "gt_pixels": 12342,
+      "pred_pixels": 20884,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00020__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00021",
+      "iou": 0.8834980759073418,
+      "dice": 0.9381459818924766,
+      "gt_pixels": 12312,
+      "pred_pixels": 12650,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00021__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00022",
+      "iou": 0.8341152769702952,
+      "dice": 0.909555999498721,
+      "gt_pixels": 61692,
+      "pred_pixels": 73961,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00022__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00023",
+      "iou": 0.7548188943020546,
+      "dice": 0.8602812481139477,
+      "gt_pixels": 7360,
+      "pred_pixels": 9209,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00023__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00024",
+      "iou": 0.6923949641340945,
+      "dice": 0.8182427610665398,
+      "gt_pixels": 20526,
+      "pred_pixels": 25717,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00024__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00025",
+      "iou": 0.8864135813859858,
+      "dice": 0.9397871072733902,
+      "gt_pixels": 52920,
+      "pred_pixels": 59531,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00025__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00026",
+      "iou": 0.6901387213510254,
+      "dice": 0.8166651797662593,
+      "gt_pixels": 68655,
+      "pred_pixels": 99480,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00026__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00027",
+      "iou": 0.7876756656804734,
+      "dice": 0.8812288278037806,
+      "gt_pixels": 121068,
+      "pred_pixels": 149629,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00027__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00028",
+      "iou": 0.6620904394593446,
+      "dice": 0.7966960446204283,
+      "gt_pixels": 10005,
+      "pred_pixels": 13482,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00028__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00029",
+      "iou": 0.5985236416838465,
+      "dice": 0.7488455298082123,
+      "gt_pixels": 9000,
+      "pred_pixels": 15037,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00029__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00030",
+      "iou": 0.928156457719081,
+      "dice": 0.9627397756062251,
+      "gt_pixels": 55590,
+      "pred_pixels": 54930,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00030__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00031",
+      "iou": 0.9167539632655912,
+      "dice": 0.9565692632806237,
+      "gt_pixels": 26664,
+      "pred_pixels": 28228,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00031__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00032",
+      "iou": 0.8691524818473991,
+      "dice": 0.9299963382210122,
+      "gt_pixels": 32704,
+      "pred_pixels": 30107,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00032__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00033",
+      "iou": 0.3389469608981804,
+      "dice": 0.5062888535492266,
+      "gt_pixels": 5688,
+      "pred_pixels": 8146,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00033__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00034",
+      "iou": 0.7724666712716723,
+      "dice": 0.8716289945440374,
+      "gt_pixels": 12792,
+      "pred_pixels": 12868,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00034__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00035",
+      "iou": 0.5425291595592642,
+      "dice": 0.7034280761529036,
+      "gt_pixels": 12208,
+      "pred_pixels": 21251,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00035__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00036",
+      "iou": 0.8935414771560198,
+      "dice": 0.9437780877111421,
+      "gt_pixels": 30743,
+      "pred_pixels": 33787,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00036__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00037",
+      "iou": 0.5502776870303823,
+      "dice": 0.7099085430100729,
+      "gt_pixels": 8460,
+      "pred_pixels": 15267,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00037__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00038",
+      "iou": 0.7295882269704259,
+      "dice": 0.8436554037470343,
+      "gt_pixels": 16756,
+      "pred_pixels": 19913,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00038__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00039",
+      "iou": 0.7717444890485246,
+      "dice": 0.8711690583137894,
+      "gt_pixels": 22126,
+      "pred_pixels": 28188,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00039__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00040",
+      "iou": 0.4595616024187453,
+      "dice": 0.6297255308130503,
+      "gt_pixels": 9120,
+      "pred_pixels": 6328,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00040__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00041",
+      "iou": 0.6304569102013119,
+      "dice": 0.7733499809246349,
+      "gt_pixels": 12173,
+      "pred_pixels": 16660,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00041__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00042",
+      "iou": 0.8692176580876086,
+      "dice": 0.930033647314142,
+      "gt_pixels": 51706,
+      "pred_pixels": 57961,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00042__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00043",
+      "iou": 0.912763061459533,
+      "dice": 0.9543921877736906,
+      "gt_pixels": 43596,
+      "pred_pixels": 47748,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00043__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00044",
+      "iou": 0.7974539236177085,
+      "dice": 0.8873150105708245,
+      "gt_pixels": 17499,
+      "pred_pixels": 20341,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00044__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00045",
+      "iou": 0.30379265147351064,
+      "dice": 0.46601375016214813,
+      "gt_pixels": 7185,
+      "pred_pixels": 23651,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00045__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00046",
+      "iou": 0.6851152718422414,
+      "dice": 0.8131375737794407,
+      "gt_pixels": 36252,
+      "pred_pixels": 51679,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00046__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00047",
+      "iou": 0.7860218360756573,
+      "dice": 0.880192862370313,
+      "gt_pixels": 43152,
+      "pred_pixels": 49764,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00047__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00048",
+      "iou": 0.8980603236076011,
+      "dice": 0.9462927099183843,
+      "gt_pixels": 57404,
+      "pred_pixels": 58260,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00048__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00049",
+      "iou": 0.7077332845895732,
+      "dice": 0.8288569309693647,
+      "gt_pixels": 61680,
+      "pred_pixels": 69117,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00049__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00050",
+      "iou": 0.5427465913278468,
+      "dice": 0.703610812532346,
+      "gt_pixels": 10261,
+      "pred_pixels": 14858,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00050__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00051",
+      "iou": 0.6685584872711398,
+      "dice": 0.8013605664666155,
+      "gt_pixels": 53238,
+      "pred_pixels": 69064,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00051__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00052",
+      "iou": 0.876128051676641,
+      "dice": 0.9339746835443038,
+      "gt_pixels": 49088,
+      "pred_pixels": 49662,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00052__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00053",
+      "iou": 0.8955785512699906,
+      "dice": 0.9449131513647643,
+      "gt_pixels": 17873,
+      "pred_pixels": 18397,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00053__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00054",
+      "iou": 0.9140231378263083,
+      "dice": 0.955080552332647,
+      "gt_pixels": 105932,
+      "pred_pixels": 112125,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00054__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00055",
+      "iou": 0.5300814394746941,
+      "dice": 0.692880033440156,
+      "gt_pixels": 12432,
+      "pred_pixels": 23453,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00055__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00056",
+      "iou": 0.8882314639186932,
+      "dice": 0.9408078203244475,
+      "gt_pixels": 31625,
+      "pred_pixels": 35073,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00056__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00057",
+      "iou": 0.9121055267991317,
+      "dice": 0.9540326242621119,
+      "gt_pixels": 57404,
+      "pred_pixels": 57112,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00057__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00058",
+      "iou": 0.8992488616919463,
+      "dice": 0.9469521133642804,
+      "gt_pixels": 31050,
+      "pred_pixels": 34438,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00058__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00059",
+      "iou": 0.5800028700581187,
+      "dice": 0.7341795145432665,
+      "gt_pixels": 21113,
+      "pred_pixels": 22928,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00059__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00060",
+      "iou": 0.8688639891346527,
+      "dice": 0.9298311639435742,
+      "gt_pixels": 74577,
+      "pred_pixels": 79537,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00060__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00061",
+      "iou": 0.5192025260684389,
+      "dice": 0.683519829857167,
+      "gt_pixels": 15360,
+      "pred_pixels": 26017,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00061__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00062",
+      "iou": 0.8809595928999818,
+      "dice": 0.936712937614738,
+      "gt_pixels": 14651,
+      "pred_pixels": 16398,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00062__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00063",
+      "iou": 0.9089454689767217,
+      "dice": 0.9523011356253736,
+      "gt_pixels": 74205,
+      "pred_pixels": 79719,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00063__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00064",
+      "iou": 0.9052625531425945,
+      "dice": 0.9502759098995869,
+      "gt_pixels": 31625,
+      "pred_pixels": 34701,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00064__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00065",
+      "iou": 0.4218544137022398,
+      "dice": 0.5933862280650952,
+      "gt_pixels": 5152,
+      "pred_pixels": 12115,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00065__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00066",
+      "iou": 0.8915050441127201,
+      "dice": 0.9426409375830275,
+      "gt_pixels": 47952,
+      "pred_pixels": 53671,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00066__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00067",
+      "iou": 0.9101671309192201,
+      "dice": 0.9529711994166971,
+      "gt_pixels": 30199,
+      "pred_pixels": 32890,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00067__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00068",
+      "iou": 0.9299794121512112,
+      "dice": 0.9637195156549666,
+      "gt_pixels": 42687,
+      "pred_pixels": 45432,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00068__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00069",
+      "iou": 0.8667624896554728,
+      "dice": 0.9286264261881985,
+      "gt_pixels": 39960,
+      "pred_pixels": 45758,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00069__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00070",
+      "iou": 0.8994176813128639,
+      "dice": 0.9470457079152731,
+      "gt_pixels": 154512,
+      "pred_pixels": 168408,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00070__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00071",
+      "iou": 0.7917796215668557,
+      "dice": 0.8837913011584192,
+      "gt_pixels": 65826,
+      "pred_pixels": 65042,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00071__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00072",
+      "iou": 0.8908699336251942,
+      "dice": 0.9422857889724966,
+      "gt_pixels": 25370,
+      "pred_pixels": 28187,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00072__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00073",
+      "iou": 0.8336122058951809,
+      "dice": 0.9092568245510847,
+      "gt_pixels": 111428,
+      "pred_pixels": 119796,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00073__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00074",
+      "iou": 0.37546340430039193,
+      "dice": 0.5459445931116801,
+      "gt_pixels": 28626,
+      "pred_pixels": 23317,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00074__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00075",
+      "iou": 0.9069821252964656,
+      "dice": 0.9512224716374447,
+      "gt_pixels": 32076,
+      "pred_pixels": 33856,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00075__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00076",
+      "iou": 0.9233779169038133,
+      "dice": 0.9601627519881635,
+      "gt_pixels": 26904,
+      "pred_pixels": 27166,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00076__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00077",
+      "iou": 0.9316720578251667,
+      "dice": 0.9646275661036572,
+      "gt_pixels": 23604,
+      "pred_pixels": 24767,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00077__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00078",
+      "iou": 0.9086778233403524,
+      "dice": 0.9521542213447916,
+      "gt_pixels": 49265,
+      "pred_pixels": 54067,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00078__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00079",
+      "iou": 0.8353991801678704,
+      "dice": 0.9103187897157746,
+      "gt_pixels": 18522,
+      "pred_pixels": 19089,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00079__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00080",
+      "iou": 0.7552320291173794,
+      "dice": 0.8605495075168481,
+      "gt_pixels": 14127,
+      "pred_pixels": 18666,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00080__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00081",
+      "iou": 0.8873168773831025,
+      "dice": 0.9402945398479451,
+      "gt_pixels": 26578,
+      "pred_pixels": 29849,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00081__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00082",
+      "iou": 0.8963636725514001,
+      "dice": 0.9453499721869457,
+      "gt_pixels": 45315,
+      "pred_pixels": 49964,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00082__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00083",
+      "iou": 0.7470485467732543,
+      "dice": 0.8552121212121212,
+      "gt_pixels": 14127,
+      "pred_pixels": 18873,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00083__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00084",
+      "iou": 0.8725301655916541,
+      "dice": 0.9319264187297779,
+      "gt_pixels": 51324,
+      "pred_pixels": 58704,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00084__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00085",
+      "iou": 0.8960501875021905,
+      "dice": 0.9451756007393716,
+      "gt_pixels": 25662,
+      "pred_pixels": 28438,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00085__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00086",
+      "iou": 0.42510239906378,
+      "dice": 0.5965920755491686,
+      "gt_pixels": 7560,
+      "pred_pixels": 7053,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00086__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00087",
+      "iou": 0.7720966084275437,
+      "dice": 0.871393359431637,
+      "gt_pixels": 6052,
+      "pred_pixels": 7742,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00087__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00088",
+      "iou": 0.917225833508073,
+      "dice": 0.956826073879638,
+      "gt_pixels": 35028,
+      "pred_pixels": 38118,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00088__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00089",
+      "iou": 0.35080430988694133,
+      "dice": 0.519400637559859,
+      "gt_pixels": 19929,
+      "pred_pixels": 51280,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00089__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00090",
+      "iou": 0.8701994152238904,
+      "dice": 0.9305953238357897,
+      "gt_pixels": 27083,
+      "pred_pixels": 29844,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00090__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00091",
+      "iou": 0.7014129975275746,
+      "dice": 0.8245064526330056,
+      "gt_pixels": 61680,
+      "pred_pixels": 71134,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00091__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00092",
+      "iou": 0.8914668394901707,
+      "dice": 0.9426195806112659,
+      "gt_pixels": 20874,
+      "pred_pixels": 22904,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00092__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00093",
+      "iou": 0.817545748116254,
+      "dice": 0.8996150429375185,
+      "gt_pixels": 10695,
+      "pred_pixels": 12944,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00093__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00094",
+      "iou": 0.7754210127614941,
+      "dice": 0.8735066299067874,
+      "gt_pixels": 13365,
+      "pred_pixels": 17103,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00094__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00095",
+      "iou": 0.651138928791299,
+      "dice": 0.7887148893860303,
+      "gt_pixels": 6624,
+      "pred_pixels": 9468,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00095__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00096",
+      "iou": 0.8732014635890946,
+      "dice": 0.9323091835685646,
+      "gt_pixels": 64897,
+      "pred_pixels": 71281,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00096__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00097",
+      "iou": 0.900928881603543,
+      "dice": 0.947882785434411,
+      "gt_pixels": 32076,
+      "pred_pixels": 34025,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00097__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00098",
+      "iou": 0.7978639056014178,
+      "dice": 0.8875687454602055,
+      "gt_pixels": 51700,
+      "pred_pixels": 63944,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00098__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00099",
+      "iou": 0.8926140404348267,
+      "dice": 0.9432605078104032,
+      "gt_pixels": 26370,
+      "pred_pixels": 29517,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00099__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00100",
+      "iou": 0.3375,
+      "dice": 0.5046728971962616,
+      "gt_pixels": 2520,
+      "pred_pixels": 7003,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00100__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00101",
+      "iou": 0.9125627170976457,
+      "dice": 0.9542826584871202,
+      "gt_pixels": 47304,
+      "pred_pixels": 51805,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00101__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00102",
+      "iou": 0.8488911810211449,
+      "dice": 0.9182705718270572,
+      "gt_pixels": 10976,
+      "pred_pixels": 10534,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00102__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00103",
+      "iou": 0.9324017809638486,
+      "dice": 0.9650185485740783,
+      "gt_pixels": 33660,
+      "pred_pixels": 35348,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00103__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00104",
+      "iou": 0.8809052859344094,
+      "dice": 0.9366822375607149,
+      "gt_pixels": 83392,
+      "pred_pixels": 88724,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00104__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00105",
+      "iou": 0.6622160223196493,
+      "dice": 0.7967869560004796,
+      "gt_pixels": 6650,
+      "pred_pixels": 10032,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00105__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00106",
+      "iou": 0.8984205872488338,
+      "dice": 0.9464926721541859,
+      "gt_pixels": 58995,
+      "pred_pixels": 65530,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00106__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00107",
+      "iou": 0.9119967425052171,
+      "dice": 0.9539731132703314,
+      "gt_pixels": 18522,
+      "pred_pixels": 19043,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00107__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00108",
+      "iou": 0.7816221222545647,
+      "dice": 0.8774274999071702,
+      "gt_pixels": 51490,
+      "pred_pixels": 56234,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00108__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00109",
+      "iou": 0.8175184988068055,
+      "dice": 0.8995985453171492,
+      "gt_pixels": 51490,
+      "pred_pixels": 54375,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00109__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00110",
+      "iou": 0.9259077815445513,
+      "dice": 0.9615286779743796,
+      "gt_pixels": 47304,
+      "pred_pixels": 50977,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00110__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00111",
+      "iou": 0.9518067250320638,
+      "dice": 0.9753083774382709,
+      "gt_pixels": 69056,
+      "pred_pixels": 70951,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00111__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00112",
+      "iou": 0.9259973952103766,
+      "dice": 0.9615769964312231,
+      "gt_pixels": 174902,
+      "pred_pixels": 187407,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00112__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00113",
+      "iou": 0.7847863688219924,
+      "dice": 0.8794177079467195,
+      "gt_pixels": 23316,
+      "pred_pixels": 25182,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00113__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00114",
+      "iou": 0.8777579991323989,
+      "dice": 0.9349000238986697,
+      "gt_pixels": 58794,
+      "pred_pixels": 66736,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00114__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00115",
+      "iou": 0.9435877188907985,
+      "dice": 0.9709751813304336,
+      "gt_pixels": 40796,
+      "pred_pixels": 42891,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00115__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00116",
+      "iou": 0.8618272202925337,
+      "dice": 0.9257864649299969,
+      "gt_pixels": 28626,
+      "pred_pixels": 29800,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00116__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00117",
+      "iou": 0.791034301254496,
+      "dice": 0.883326802507837,
+      "gt_pixels": 9045,
+      "pred_pixels": 11371,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00117__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00118",
+      "iou": 0.7904985200705045,
+      "dice": 0.8829926539558123,
+      "gt_pixels": 51490,
+      "pred_pixels": 56187,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00118__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00119",
+      "iou": 0.8913125948406677,
+      "dice": 0.9425333467054458,
+      "gt_pixels": 65880,
+      "pred_pixels": 73714,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00119__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00120",
+      "iou": 0.9754557698783011,
+      "dice": 0.98757540892793,
+      "gt_pixels": 81796,
+      "pred_pixels": 82475,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00120__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00121",
+      "iou": 0.7119769758689396,
+      "dice": 0.8317599896547265,
+      "gt_pixels": 6624,
+      "pred_pixels": 8842,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00121__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00122",
+      "iou": 0.91015978713623,
+      "dice": 0.9529671740192682,
+      "gt_pixels": 65667,
+      "pred_pixels": 71450,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00122__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00123",
+      "iou": 0.6330710998960962,
+      "dice": 0.7753135793492092,
+      "gt_pixels": 8625,
+      "pred_pixels": 13379,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00123__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00124",
+      "iou": 0.49524286429644465,
+      "dice": 0.6624246483590087,
+      "gt_pixels": 3960,
+      "pred_pixels": 7984,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00124__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00125",
+      "iou": 0.7432226499839589,
+      "dice": 0.8526996250201293,
+      "gt_pixels": 21952,
+      "pred_pixels": 21517,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00125__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00126",
+      "iou": 0.4701412798290395,
+      "dice": 0.6395865299200517,
+      "gt_pixels": 3960,
+      "pred_pixels": 8423,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00126__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00127",
+      "iou": 0.7933045280500228,
+      "dice": 0.8847404505386876,
+      "gt_pixels": 23316,
+      "pred_pixels": 27734,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00127__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00128",
+      "iou": 0.7086746803460684,
+      "dice": 0.829502173231169,
+      "gt_pixels": 21952,
+      "pred_pixels": 22682,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00128__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00129",
+      "iou": 0.8813313420098143,
+      "dice": 0.9369230420286239,
+      "gt_pixels": 103293,
+      "pred_pixels": 117152,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00129__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00130",
+      "iou": 0.9219473822218338,
+      "dice": 0.9593887853017418,
+      "gt_pixels": 32047,
+      "pred_pixels": 33920,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00130__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00131",
+      "iou": 0.9235396489104116,
+      "dice": 0.9602501819326161,
+      "gt_pixels": 49265,
+      "pred_pixels": 52421,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00131__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00132",
+      "iou": 0.9030035728327949,
+      "dice": 0.9490298239310097,
+      "gt_pixels": 53020,
+      "pred_pixels": 58300,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00132__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00133",
+      "iou": 0.9171807173863377,
+      "dice": 0.9568015253530359,
+      "gt_pixels": 40432,
+      "pred_pixels": 43483,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00133__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00134",
+      "iou": 0.9294072405647421,
+      "dice": 0.9634122035249566,
+      "gt_pixels": 17243,
+      "pred_pixels": 17878,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00134__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00135",
+      "iou": 0.6884609529608768,
+      "dice": 0.8154893386827751,
+      "gt_pixels": 9120,
+      "pred_pixels": 13063,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00135__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00136",
+      "iou": 0.8939077144917087,
+      "dice": 0.9439823362582561,
+      "gt_pixels": 24840,
+      "pred_pixels": 27697,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00136__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00137",
+      "iou": 0.7033991692803255,
+      "dice": 0.8258770838517044,
+      "gt_pixels": 8316,
+      "pred_pixels": 11779,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00137__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00138",
+      "iou": 0.9241491746484614,
+      "dice": 0.9605795505094368,
+      "gt_pixels": 48285,
+      "pred_pixels": 46133,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00138__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00139",
+      "iou": 0.6141822085066416,
+      "dice": 0.7609825028053697,
+      "gt_pixels": 9156,
+      "pred_pixels": 14905,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00139__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00140",
+      "iou": 0.7425738631838815,
+      "dice": 0.8522724676096246,
+      "gt_pixels": 21952,
+      "pred_pixels": 21811,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00140__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00141",
+      "iou": 0.9286575672860823,
+      "dice": 0.9630092796543933,
+      "gt_pixels": 34353,
+      "pred_pixels": 36016,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00141__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00142",
+      "iou": 0.7868086410295695,
+      "dice": 0.8806859592711683,
+      "gt_pixels": 10353,
+      "pred_pixels": 12972,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00142__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00143",
+      "iou": 0.8316443648171995,
+      "dice": 0.908084976310561,
+      "gt_pixels": 29722,
+      "pred_pixels": 35708,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00143__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00144",
+      "iou": 0.8688892243331249,
+      "dice": 0.9298456141970323,
+      "gt_pixels": 40365,
+      "pred_pixels": 46301,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00144__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00145",
+      "iou": 0.9092246900122632,
+      "dice": 0.9524543598966585,
+      "gt_pixels": 33405,
+      "pred_pixels": 36654,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00145__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00146",
+      "iou": 0.8701214574898786,
+      "dice": 0.9305507447177,
+      "gt_pixels": 21777,
+      "pred_pixels": 24415,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00146__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00147",
+      "iou": 0.791493582987166,
+      "dice": 0.8836130818480706,
+      "gt_pixels": 12913,
+      "pred_pixels": 15982,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00147__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00148",
+      "iou": 0.8558804965285083,
+      "dice": 0.9223444053962135,
+      "gt_pixels": 20350,
+      "pred_pixels": 23755,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00148__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00149",
+      "iou": 0.9294271008922752,
+      "dice": 0.9634228735176945,
+      "gt_pixels": 42362,
+      "pred_pixels": 43484,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00149__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00150",
+      "iou": 0.7677092347632587,
+      "dice": 0.8685922092454018,
+      "gt_pixels": 12615,
+      "pred_pixels": 15983,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00150__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00151",
+      "iou": 0.6386285150468672,
+      "dice": 0.7794671082342315,
+      "gt_pixels": 2702,
+      "pred_pixels": 3941,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00151__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00152",
+      "iou": 0.8324503125613208,
+      "dice": 0.9085652220471477,
+      "gt_pixels": 29722,
+      "pred_pixels": 35647,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00152__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00153",
+      "iou": 0.8168437801898051,
+      "dice": 0.8991898908385725,
+      "gt_pixels": 14490,
+      "pred_pixels": 17481,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00153__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00154",
+      "iou": 0.8416754226764734,
+      "dice": 0.9140323124400301,
+      "gt_pixels": 18522,
+      "pred_pixels": 20039,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00154__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00155",
+      "iou": 0.88554615181169,
+      "dice": 0.9392993652908791,
+      "gt_pixels": 40365,
+      "pred_pixels": 45186,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00155__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00156",
+      "iou": 0.9177601248315483,
+      "dice": 0.9571167039591694,
+      "gt_pixels": 26904,
+      "pred_pixels": 27173,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00156__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00157",
+      "iou": 0.7212743516565331,
+      "dice": 0.8380701786003929,
+      "gt_pixels": 24956,
+      "pred_pixels": 30531,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00157__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00158",
+      "iou": 0.5920439844760673,
+      "dice": 0.7437533011010442,
+      "gt_pixels": 9156,
+      "pred_pixels": 15457,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00158__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00159",
+      "iou": 0.42227186233143044,
+      "dice": 0.593799080914432,
+      "gt_pixels": 5152,
+      "pred_pixels": 12039,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00159__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00160",
+      "iou": 0.8625286141926396,
+      "dice": 0.926190993920944,
+      "gt_pixels": 49020,
+      "pred_pixels": 56753,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00160__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00161",
+      "iou": 0.833339069975562,
+      "dice": 0.9090943226194053,
+      "gt_pixels": 24248,
+      "pred_pixels": 29016,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00161__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00162",
+      "iou": 0.6271312773688624,
+      "dice": 0.7708428767750801,
+      "gt_pixels": 6732,
+      "pred_pixels": 10732,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00162__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00163",
+      "iou": 0.624554076394327,
+      "dice": 0.7688929355685288,
+      "gt_pixels": 29496,
+      "pred_pixels": 45188,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00163__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00164",
+      "iou": 0.7519199441470794,
+      "dice": 0.8583953241232731,
+      "gt_pixels": 22631,
+      "pred_pixels": 30065,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00164__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00165",
+      "iou": 0.8565087494664959,
+      "dice": 0.9227090900731069,
+      "gt_pixels": 31682,
+      "pred_pixels": 33565,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00165__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00166",
+      "iou": 0.8501898376282414,
+      "dice": 0.9190298426004759,
+      "gt_pixels": 21462,
+      "pred_pixels": 24345,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00166__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00167",
+      "iou": 0.8811347139908104,
+      "dice": 0.9368119225459308,
+      "gt_pixels": 40172,
+      "pred_pixels": 44575,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00167__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00168",
+      "iou": 0.9394902609654852,
+      "dice": 0.9688012153232506,
+      "gt_pixels": 66598,
+      "pred_pixels": 67029,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00168__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00169",
+      "iou": 0.8490939220612604,
+      "dice": 0.9183891763753578,
+      "gt_pixels": 15910,
+      "pred_pixels": 18681,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00169__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00170",
+      "iou": 0.9447581838631386,
+      "dice": 0.9715945064043248,
+      "gt_pixels": 81090,
+      "pred_pixels": 83174,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00170__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00171",
+      "iou": 0.895153373003947,
+      "dice": 0.9446764422924442,
+      "gt_pixels": 142529,
+      "pred_pixels": 141238,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00171__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00172",
+      "iou": 0.9332444444444444,
+      "dice": 0.9654696767667479,
+      "gt_pixels": 84150,
+      "pred_pixels": 89842,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00172__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00173",
+      "iou": 0.9289680959334484,
+      "dice": 0.963176216228616,
+      "gt_pixels": 168145,
+      "pred_pixels": 180597,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00173__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00174",
+      "iou": 0.8232950395112557,
+      "dice": 0.903084823542266,
+      "gt_pixels": 12431,
+      "pred_pixels": 15026,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00174__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00175",
+      "iou": 0.42358692975976925,
+      "dice": 0.5950980876612146,
+      "gt_pixels": 12050,
+      "pred_pixels": 28424,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00175__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00176",
+      "iou": 0.926160726029199,
+      "dice": 0.9616650505988555,
+      "gt_pixels": 35244,
+      "pred_pixels": 37979,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00176__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00177",
+      "iou": 0.9397224803615539,
+      "dice": 0.9689246682199555,
+      "gt_pixels": 119808,
+      "pred_pixels": 124405,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00177__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00178",
+      "iou": 0.8256433314886552,
+      "dice": 0.9044957656821325,
+      "gt_pixels": 74875,
+      "pred_pixels": 83474,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00178__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00179",
+      "iou": 0.9466318475873939,
+      "dice": 0.972584362842543,
+      "gt_pixels": 80772,
+      "pred_pixels": 83222,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00179__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00180",
+      "iou": 0.7221652505127454,
+      "dice": 0.8386712602611543,
+      "gt_pixels": 10557,
+      "pred_pixels": 12954,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00180__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00181",
+      "iou": 0.9079563332182188,
+      "dice": 0.9517579804216337,
+      "gt_pixels": 94977,
+      "pred_pixels": 103916,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00181__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00182",
+      "iou": 0.8689000063327211,
+      "dice": 0.92985178809832,
+      "gt_pixels": 69372,
+      "pred_pixels": 78187,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00182__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00183",
+      "iou": 0.9705194261682115,
+      "dice": 0.9850391863991338,
+      "gt_pixels": 142848,
+      "pred_pixels": 144369,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00183__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00184",
+      "iou": 0.753005066392927,
+      "dice": 0.8591019853038403,
+      "gt_pixels": 22905,
+      "pred_pixels": 30034,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00184__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00185",
+      "iou": 0.9117978620019437,
+      "dice": 0.9538642971879384,
+      "gt_pixels": 24432,
+      "pred_pixels": 24749,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00185__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00186",
+      "iou": 0.8852304670301757,
+      "dice": 0.9391217493155508,
+      "gt_pixels": 142529,
+      "pred_pixels": 135797,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00186__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00187",
+      "iou": 0.8367030816892223,
+      "dice": 0.9110923698344356,
+      "gt_pixels": 21462,
+      "pred_pixels": 23596,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00187__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00188",
+      "iou": 0.6282008581336572,
+      "dice": 0.7716503218819566,
+      "gt_pixels": 32193,
+      "pred_pixels": 50912,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00188__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00189",
+      "iou": 0.9211603613777527,
+      "dice": 0.9589624894375253,
+      "gt_pixels": 40640,
+      "pred_pixels": 41017,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00189__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00190",
+      "iou": 0.8603227253288273,
+      "dice": 0.924917718431632,
+      "gt_pixels": 83051,
+      "pred_pixels": 95300,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00190__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00191",
+      "iou": 0.8941493417374066,
+      "dice": 0.944117047198875,
+      "gt_pixels": 88427,
+      "pred_pixels": 97891,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00191__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00192",
+      "iou": 0.0,
+      "dice": 0.0,
+      "gt_pixels": 1,
+      "pred_pixels": 190083,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00192__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00193",
+      "iou": 0.8245872378402499,
+      "dice": 0.9038616742889286,
+      "gt_pixels": 21099,
+      "pred_pixels": 19790,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00193__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00194",
+      "iou": 0.8284290432867821,
+      "dice": 0.9061648263884488,
+      "gt_pixels": 74875,
+      "pred_pixels": 82891,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00194__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00195",
+      "iou": 0.6504117902037277,
+      "dice": 0.7881812212738017,
+      "gt_pixels": 12288,
+      "pred_pixels": 18172,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00195__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00196",
+      "iou": 0.9475761569505807,
+      "dice": 0.9730825195911713,
+      "gt_pixels": 138816,
+      "pred_pixels": 146389,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00196__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00197",
+      "iou": 0.9073495959395856,
+      "dice": 0.9514245294844474,
+      "gt_pixels": 136503,
+      "pred_pixels": 142712,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00197__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00198",
+      "iou": 0.8265672550213025,
+      "dice": 0.905049899201946,
+      "gt_pixels": 27892,
+      "pred_pixels": 32129,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00198__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00199",
+      "iou": 0.9065376359733692,
+      "dice": 0.9509779601183094,
+      "gt_pixels": 149964,
+      "pred_pixels": 164466,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00199__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00200",
+      "iou": 0.5869158878504673,
+      "dice": 0.7396937573616019,
+      "gt_pixels": 53506,
+      "pred_pixels": 89975,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00200__deeplab_joint.png"
+    },
+    {
+      "sample_id": "drywall_join_detect_valid_00201",
+      "iou": 0.9559652465392795,
+      "dice": 0.9774869448531195,
+      "gt_pixels": 123392,
+      "pred_pixels": 124020,
+      "mask": "outputs/deeplab/drywall_valid/drywall_join_detect_valid_00201__deeplab_joint.png"
+    }
+  ]
+}
