@@ -38,6 +38,22 @@ class DeepLabInferenceConfig:
     skip_existing: bool = False
 
 
+@dataclass
+class SingleImageInferenceConfig:
+    """Configuration for running DeepLab inference on a single image."""
+
+    image_path: Path
+    checkpoint: Path
+    output_dir: Path
+    prompt_suffix: str
+    class_labels: Sequence[str] | None = None
+    target_label: str | None = None
+    resize: tuple[int, int] | None = (512, 512)
+    device: str | None = None
+    image_id: str | None = None
+    include_label_suffix: bool = True
+
+
 def load_checkpoint_metadata(checkpoint: Path, device: torch.device):
     if not checkpoint.exists():
         raise FileNotFoundError(checkpoint)
@@ -74,7 +90,7 @@ def save_mask(mask_tensor: torch.Tensor, size: tuple[int, int], path: Path) -> N
     mask_img.save(path)
 
 
-def _resolve_active_labels(
+def resolve_active_labels(
     requested_labels: Sequence[str] | None,
     checkpoint_labels: Sequence[str] | None,
     fallback_target: str | None,
@@ -88,7 +104,7 @@ def _resolve_active_labels(
     raise ValueError("Unable to resolve class labels for inference")
 
 
-def _build_label_indices(labels: Iterable[str], label_map: Mapping[str, int] | None) -> Dict[str, int]:
+def build_label_indices(labels: Iterable[str], label_map: Mapping[str, int] | None) -> Dict[str, int]:
     indices: Dict[str, int] = {}
     if label_map is None:
         for label in labels:
@@ -111,8 +127,8 @@ def run_deeplab_inference(config: DeepLabInferenceConfig) -> Dict[str, object]:
 
     device = torch.device(config.device or ("cuda" if torch.cuda.is_available() else "cpu"))
     model, checkpoint_labels, label_map = load_checkpoint_metadata(config.checkpoint, device)
-    active_labels = _resolve_active_labels(config.class_labels, checkpoint_labels, config.target_label)
-    label_indices = _build_label_indices(active_labels, label_map)
+    active_labels = resolve_active_labels(config.class_labels, checkpoint_labels, config.target_label)
+    label_indices = build_label_indices(active_labels, label_map)
 
     resize = tuple(config.resize) if config.resize else None
     batch: List[Dict[str, object]] = []
@@ -180,4 +196,57 @@ def run_deeplab_inference(config: DeepLabInferenceConfig) -> Dict[str, object]:
         "labels": active_labels,
         "num_saved": processed,
         "skipped_existing": skipped_existing,
+    }
+
+
+def run_single_image_inference(config: SingleImageInferenceConfig) -> Dict[str, object]:
+    """Run DeepLab inference on a single RGB image."""
+
+    if not config.image_path.exists():
+        raise FileNotFoundError(config.image_path)
+
+    output_dir = config.output_dir
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    device = torch.device(config.device or ("cuda" if torch.cuda.is_available() else "cpu"))
+    model, checkpoint_labels, label_map = load_checkpoint_metadata(config.checkpoint, device)
+    active_labels = resolve_active_labels(config.class_labels, checkpoint_labels, config.target_label)
+    label_indices = build_label_indices(active_labels, label_map)
+
+    image_id = config.image_id or config.image_path.stem
+    resize = tuple(config.resize) if config.resize else None
+
+    with Image.open(config.image_path) as img:
+        image = img.convert("RGB")
+        original_size = image.size
+        tensor = preprocess(image, resize)
+
+    batched = tensor.unsqueeze(0).to(device)
+    with torch.no_grad():
+        logits = model(batched)["out"]
+    prediction = torch.argmax(logits, dim=1)[0].cpu()
+
+    mask_paths: Dict[str, str] = {}
+    suffix_map: Dict[str, str] = {}
+    prompt_suffix = config.prompt_suffix
+    saved = 0
+
+    for label in active_labels:
+        suffix = f"{prompt_suffix}_{label}" if (config.include_label_suffix or len(active_labels) > 1) else prompt_suffix
+        mask_path = output_dir / f"{image_id}__{suffix}.png"
+        class_idx = label_indices[label]
+        mask_binary = (prediction == class_idx).to(torch.uint8)
+        save_mask(mask_binary, original_size, mask_path)
+        mask_paths[label] = str(mask_path)
+        suffix_map[label] = suffix
+        saved += 1
+
+    return {
+        "image": str(config.image_path),
+        "checkpoint": str(config.checkpoint),
+        "output_dir": str(output_dir),
+        "prompt_suffixes": suffix_map,
+        "labels": list(active_labels),
+        "mask_paths": mask_paths,
+        "num_saved": saved,
     }

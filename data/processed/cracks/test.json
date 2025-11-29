@@ -9,17 +9,17 @@
   "samples": [
     {
       "id": "cracks_test_00000",
-      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/5aabdac3fae3fd5b9edd061419b9f2b4/transformed.jpg",
-      "prompt": "detect NewCracks - v2 2024-05-18 10-54pm",
+      "image_url": "file:///home/sknt/Desktop/mallikarjun/tts/prompt_based_image_segmentation/data/raw/coco_cracks/test/2056_jpg.rf.5aabdac3fae3fd5b9edd061419b9f2b4.jpg",
+      "prompt": "detect drywall cracks",
       "objects": [
         {
           "label": "drywall_crack",
           "source_label": "NewCracks - v2 2024-05-18 10-54pm",
           "bbox_norm_xyxy": [
+            0.130859,
             0.0,
-            0.130987,
-            0.993157,
-            0.953079
+            0.952193,
+            0.992422
           ],
           "bbox_space": "relative_0_1"
         },
@@ -27,10 +27,10 @@
           "label": "drywall_crack",
           "source_label": "NewCracks - v2 2024-05-18 10-54pm",
           "bbox_norm_xyxy": [
+            0.119141,
             0.0,
-            0.119257,
-            0.975562,
-            0.958944
+            0.958064,
+            0.975336
           ],
           "bbox_space": "relative_0_1"
         }
@@ -38,35 +38,17 @@
     },
     {
       "id": "cracks_test_00001",
-      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/66ecf57fe78da2cc077ac3a35047dbb1/transformed.jpg",
-      "prompt": "detect NewCracks - v2 2024-05-18 10-54pm",
+      "image_url": "file:///home/sknt/Desktop/mallikarjun/tts/prompt_based_image_segmentation/data/raw/coco_cracks/test/photo_6165758190491385217_y_jpg.rf.bf329bd4a5738897e4295bf8b52f45b9.jpg",
+      "prompt": "detect drywall cracks",
       "objects": [
         {
           "label": "drywall_crack",
           "source_label": "NewCracks - v2 2024-05-18 10-54pm",
           "bbox_norm_xyxy": [
-            0.0,
-            0.400782,
-            0.981427,
-            0.55132
-          ],
-          "bbox_space": "relative_0_1"
-        }
-      ]
-    },
-    {
-      "id": "cracks_test_00002",
-      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/bf329bd4a5738897e4295bf8b52f45b9/transformed.jpg",
-      "prompt": "detect NewCracks - v2 2024-05-18 10-54pm",
-      "objects": [
-        {
-          "label": "drywall_crack",
-          "source_label": "NewCracks - v2 2024-05-18 10-54pm",
-          "bbox_norm_xyxy": [
-            0.373412,
-            0.518084,
-            0.863148,
-            0.572825
+            0.517578,
+            0.373047,
+            0.571926,
+            0.862357
           ],
           "bbox_space": "relative_0_1"
         },
@@ -74,10 +56,28 @@
           "label": "drywall_crack",
           "source_label": "NewCracks - v2 2024-05-18 10-54pm",
           "bbox_norm_xyxy": [
-            0.048876,
-            0.450635,
-            0.539589,
-            0.535679
+            0.451172,
+            0.048828,
+            0.535795,
+            0.538352
+          ],
+          "bbox_space": "relative_0_1"
+        }
+      ]
+    },
+    {
+      "id": "cracks_test_00002",
+      "image_url": "file:///home/sknt/Desktop/mallikarjun/tts/prompt_based_image_segmentation/data/raw/coco_cracks/test/photo_6165758190491385221_y_jpg.rf.66ecf57fe78da2cc077ac3a35047dbb1.jpg",
+      "prompt": "detect drywall cracks",
+      "objects": [
+        {
+          "label": "drywall_crack",
+          "source_label": "NewCracks - v2 2024-05-18 10-54pm",
+          "bbox_norm_xyxy": [
+            0.400391,
+            0.0,
+            0.550164,
+            0.981324
           ],
           "bbox_space": "relative_0_1"
         }
@@ -85,17 +85,17 @@
     },
     {
       "id": "cracks_test_00003",
-      "image_url": "https://transform.roboflow.com/0kdgREENfcfMx8GDFZuwVQ4ptdM2/3d9e36ced6eba26c61766772021d6008/transformed.jpg",
-      "prompt": "detect NewCracks - v2 2024-05-18 10-54pm",
+      "image_url": "file:///home/sknt/Desktop/mallikarjun/tts/prompt_based_image_segmentation/data/raw/coco_cracks/test/photo_6165758190491385222_y_jpg.rf.3d9e36ced6eba26c61766772021d6008.jpg",
+      "prompt": "detect drywall cracks",
       "objects": [
         {
           "label": "drywall_crack",
           "source_label": "NewCracks - v2 2024-05-18 10-54pm",
           "bbox_norm_xyxy": [
-            0.284457,
-            0.44477,
-            1.0,
-            0.595308
+            0.445312,
+            0.285156,
+            0.595654,
+            1.0
           ],
           "bbox_space": "relative_0_1"
         }

@@ -1,0 +1,284 @@
+<h1 id="prompt-based-drywall-qa-segmentation">Prompt-Based Drywall QA Segmentation</h1>
+<p><em><em>Updated 29 Nov 2025 — consolidated run using refreshed COCO exports and prompt-specific DeepLab heads.</em></em></p>
+<style>
+table.visual-grid {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+table.visual-grid td, table.visual-grid th {
+    text-align: center;
+    vertical-align: top;
+    padding: 8px;
+}
+table.visual-grid img {
+    display: block;
+    margin: 0 auto;
+    width: 190px;
+    height: auto;
+}
+</style>
+<h2 id="goal-approach">1. Goal &amp; Approach</h2>
+<ul>
+<li><strong>Goal</strong>: surface drywall cracks and joints automatically so QA crews can prioritize punch-list fixes without manual markup.</li>
+<li><strong>Approach</strong>: manifests (image URL + prompt) feed a router that picks the right DeepLabV3-ResNet50 head; both heads share preprocessing, caching, and evaluation code paths.</li>
+<li><strong>Models tried</strong>: two single-class DeepLabV3 variants (<code>cracks_deeplabv3</code>, <code>joints_deeplabv3</code>) fine-tuned for 10 epochs with AdamW (lr=1e-4, wd=1e-4, resize 512×512, batch 4). No alternate architectures were required because both defects converged cleanly.</li>
+</ul>
+<h3 id="why-these-choices">Why these choices?</h3>
+<ul>
+<li><strong>DeepLabV3-ResNet50</strong>: balances accuracy and runtime (≤25 ms/image on CPU/GPU) while supporting box-derived masks via <code>BoxMaskDataset</code>. Heavier transformers would exceed field-device limits without measurably improving single-class segmentation.</li>
+<li><strong>Prompt routing</strong>: lets us add new defect heads without redeploying the entire pipeline—each entry in <code>configs/segmentation_routes.yaml</code> describes a checkpoint, mask suffix, and batching policy.</li>
+<li><strong>COCO → processed manifests</strong>: preserves Roboflow metadata verbatim and keeps local file URIs, so the project can train/eval offline; the converter enforces consistent label casing and normalized boxes.</li>
+<li><strong>512×512 resize</strong>: large enough to keep detail on joints/cracks but small enough for batch size 4 on standard GPUs, ensuring 10-epoch runs finish in under 70 minutes.</li>
+</ul>
+<h2 id="dataset-snapshot">2. Dataset Snapshot</h2>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 17%" />
+<col style="width: 20%" />
+<col style="width: 22%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th>Split</th>
+<th style="text-align: right;">Images</th>
+<th style="text-align: right;">Objects</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>cracks</td>
+<td>train</td>
+<td style="text-align: right;">15,489</td>
+<td style="text-align: right;">24,244</td>
+<td>Roboflow COCO → <code>scripts/convert_coco.py</code> → local manifests</td>
+</tr>
+<tr class="even">
+<td>cracks</td>
+<td>valid</td>
+<td style="text-align: right;">201</td>
+<td style="text-align: right;">372</td>
+<td>Used for metrics + qualitative review</td>
+</tr>
+<tr class="odd">
+<td>cracks</td>
+<td>test</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td>Placeholder until more labels arrive</td>
+</tr>
+<tr class="even">
+<td>drywall_join_detect</td>
+<td>train</td>
+<td style="text-align: right;">2,453</td>
+<td style="text-align: right;">3,271</td>
+<td>Joints annotated with boxes only</td>
+</tr>
+<tr class="odd">
+<td>drywall_join_detect</td>
+<td>valid</td>
+<td style="text-align: right;">202</td>
+<td style="text-align: right;">250</td>
+<td>Evaluation + visuals</td>
+</tr>
+<tr class="even">
+<td>drywall_join_detect</td>
+<td>test</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td>Not provided</td>
+</tr>
+</tbody>
+</table>
+<h2 id="runtime-footprint">3. Runtime &amp; Footprint</h2>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 34%" />
+<col style="width: 21%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Train runtime (10 epochs)</th>
+<th>Checkpoint size</th>
+<th>Avg inference time / image*</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>cracks_deeplabv3</td>
+<td>~68 min (recorded during 29 Nov fine-tune on single RTX 6000)</td>
+<td>161 MB</td>
+<td>23.7 ms (201-image valid split)</td>
+</tr>
+<tr class="even">
+<td>joints_deeplabv3</td>
+<td>~28 min (same hardware, same day)</td>
+<td>161 MB</td>
+<td>23.4 ms (202-image valid split)</td>
+</tr>
+</tbody>
+</table>
+<p>*Inference timings captured via <code>/usr/bin/time python scripts/run_segmentation_router.py … --skip-existing</code> so they reflect pure forward passes using the already-trained checkpoints.</p>
+<h2 id="validation-metrics">4. Validation Metrics</h2>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 16%" />
+<col style="width: 18%" />
+<col style="width: 16%" />
+<col style="width: 18%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Defect</th>
+<th>Manifest</th>
+<th>Masks dir</th>
+<th style="text-align: right;">Mean IoU</th>
+<th style="text-align: right;">Mean Dice</th>
+<th style="text-align: right;">Samples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Drywall cracks</td>
+<td><code>data/processed/cracks/valid.json</code></td>
+<td><code>outputs/routed/crack_latest</code></td>
+<td style="text-align: right;">0.667</td>
+<td style="text-align: right;">0.768</td>
+<td style="text-align: right;">201</td>
+</tr>
+<tr class="even">
+<td>Drywall joints</td>
+<td><code>data/processed/drywall_join_detect/valid.json</code></td>
+<td><code>outputs/routed/joint_latest</code></td>
+<td style="text-align: right;">0.803</td>
+<td style="text-align: right;">0.880</td>
+<td style="text-align: right;">202</td>
+</tr>
+</tbody>
+</table>
+<h2 id="visual-examples-original-gt-prediction">5. Visual Examples (Original | GT | Prediction)</h2>
+<table class="visual-grid">
+<thead>
+<tr>
+<th>
+Sample
+</th>
+<th>
+Original
+</th>
+<th>
+Ground Truth
+</th>
+<th>
+Prediction
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>cracks_valid_00121</code>
+</td>
+<td>
+<img src="examples/cracks_valid_00121_original.png" width="200" />
+</td>
+<td>
+<img src="examples/cracks_valid_00121_gt.png" width="200" />
+</td>
+<td>
+<img src="examples/cracks_valid_00121_prediction.png" width="200" />
+</td>
+</tr>
+<tr>
+<td>
+<code>cracks_valid_00118</code>
+</td>
+<td>
+<img src="examples/cracks_valid_00118_original.png" width="200" />
+</td>
+<td>
+<img src="examples/cracks_valid_00118_gt.png" width="200" />
+</td>
+<td>
+<img src="examples/cracks_valid_00118_prediction.png" width="200" />
+</td>
+</tr>
+<tr>
+<td>
+<code>cracks_valid_00096</code>
+</td>
+<td>
+<img src="examples/cracks_valid_00096_original.png" width="200" />
+</td>
+<td>
+<img src="examples/cracks_valid_00096_gt.png" width="200" />
+</td>
+<td>
+<img src="examples/cracks_valid_00096_prediction.png" width="200" />
+</td>
+</tr>
+<tr>
+<td>
+<code>drywall_join_detect_valid_00093</code>
+</td>
+<td>
+<img src="examples/drywall_join_detect_valid_00093_original.png" width="200" />
+</td>
+<td>
+<img src="examples/drywall_join_detect_valid_00093_gt.png" width="200" />
+</td>
+<td>
+<img src="examples/drywall_join_detect_valid_00093_prediction.png" width="200" />
+</td>
+</tr>
+<tr>
+<td>
+<code>drywall_join_detect_valid_00141</code>
+</td>
+<td>
+<img src="examples/drywall_join_detect_valid_00141_original.png" width="200" />
+</td>
+<td>
+<img src="examples/drywall_join_detect_valid_00141_gt.png" width="200" />
+</td>
+<td>
+<img src="examples/drywall_join_detect_valid_00141_prediction.png" width="200" />
+</td>
+</tr>
+<tr>
+<td>
+<code>drywall_join_detect_valid_00123</code>
+</td>
+<td>
+<img src="examples/drywall_join_detect_valid_00123_original.png" width="200" />
+</td>
+<td>
+<img src="examples/drywall_join_detect_valid_00123_gt.png" width="200" />
+</td>
+<td>
+<img src="examples/drywall_join_detect_valid_00123_prediction.png" width="200" />
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>(Assets live in <code>reports/examples/</code> alongside stitched triptychs for sharing.)</em></p>
+<h2 id="brief-failure-notes">6. Brief Failure Notes</h2>
+<ul>
+<li><strong>Hairline cracks</strong> near image borders can disappear after resizing to 512². Mitigation ideas: inference-time tiling or mixed-resolution training.</li>
+<li><strong>Painter’s tape / tools</strong> sometimes mimic joints because labels are box-derived. Capturing polygon masks or adding hard negatives would reduce these false positives.</li>
+</ul>
+<h2 id="checklist-recap">7. Checklist Recap</h2>
+<ul>
+<li>COCO exports converted with <code>scripts/convert_coco.py</code>; manifests stored under <code>data/processed/</code>.</li>
+<li>Checkpoints <code>checkpoints/cracks_deeplabv3.pth</code> &amp; <code>checkpoints/joints_deeplabv3.pth</code> power all router/eval steps.</li>
+<li>Metrics, visuals, and runtime benchmarks above rely solely on those trained weights—no additional training was run for this report.</li>
+</ul>

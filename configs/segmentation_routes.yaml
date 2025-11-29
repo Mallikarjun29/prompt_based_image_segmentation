@@ -2,7 +2,7 @@
 routes:
   joint_latest:
     engine: deeplab
-    checkpoint: checkpoints/deeplabv3_joint_latest.pth
+    checkpoint: checkpoints/joints_deeplabv3.pth
     mask_suffix: joint_latest
     class_labels:
       - drywall_joint
@@ -10,7 +10,7 @@ routes:
     batch_size: 4
   crack_latest:
     engine: deeplab
-    checkpoint: checkpoints/deeplabv3_crack_latest.pth
+    checkpoint: checkpoints/cracks_deeplabv3.pth
     mask_suffix: crack_latest
     class_labels:
       - drywall_crack

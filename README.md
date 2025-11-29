@@ -1,215 +1,245 @@
 # Prompt-Based Drywall QA Segmentation
 
-Prompt-driven segmentation pipeline for drywall quality assurance images. The project will combine an
-open-vocabulary detector (e.g., GroundingDINO) with a high-resolution segmentor (e.g., SAM/HQ-SAM) to
-mask drywall defects such as exposed tape, screw pops, and joint cracks, then compute QA metrics for
-flagging issues.
+Production-ready pipeline for drywall quality assurance. Each defect type (joints vs cracks) gets its
+own fine-tuned DeepLabV3-ResNet50 head. Manifests describe the imagery, the router picks the correct
+checkpoint, and automated evaluation reports IoU/Dice so QA teams can catch exposed tape, skim-coat
+issues, and cracks early.
+
+## Highlights
+- DeepLab-only stack: lightweight checkpoints per defect with a single, consistent inference path.
+- Flexible routing: `configs/segmentation_routes.yaml` maps prompt labels to checkpoints and output
+  suffix conventions so all CLIs stay consistent.
+- Single-image + batch inference: iterate a manifest with the router or run targeted experiments with
+  `scripts/run_single_prompt_inference.py`.
+- Reproducible evaluation: prompts are sanitized into deterministic suffixes so metrics can always be
+  tied back to the masks that generated them.
+
+**Full report**: see `full_pipeline_report.pdf` for the choices made summary, Visual Examples, data splits, runtime/footprint stats, metrics, and failure notes.
 
 ## Repository Layout
-- `configs/` – experiment + evaluation settings.
-- `data/` – `raw/`, `processed/`, and `prompts/` folders for assets (kept empty with gitkeep files).
-- `notebooks/` – exploratory analysis, visualization, and reporting notebooks.
-- `reports/` – generated QA summaries, charts, or exportable artefacts.
-- `scripts/` – CLI utilities for training/inference automation.
-- `src/` – reusable Python packages (`data/`, `models/`, `pipeline/`, `utils/`).
-- `tests/` – unit and integration tests guarding data transforms and QA metrics.
-
-## Getting Started
-1. Create the virtual environment if it does not exist yet:
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
-   ```
-2. Install dependencies:
-   ```bash
-   pip install --upgrade pip
-   pip install -r requirements.txt
-   ```
-3. Place drywall imagery inside `data/raw/` and update prompt templates in `data/prompts/`.
-4. Copy the base configuration from `configs/` and update dataset paths + prompt definitions.
-
-## Roboflow Datasets
-You already host drywall QA imagery (standard drywall + crack-focused sets) in Roboflow. Export each
-project as "Segmentation" format with PNG/JPEG images plus COCO annotations, then download straight
-into `data/raw/`:
-
-```bash
-# Example shared export link (replace with your Roboflow download URL)
-curl -L "https://app.roboflow.com/ds/<dataset-id>?key=<api-key>" -o data/raw/drywall.zip
-cd data/raw && unzip -o drywall.zip && rm drywall.zip
+```
+├── checkpoints/                 # fine-tuned DeepLab weights (.pth)
+├── configs/
+│   └── segmentation_routes.yaml # prompt-label routing map
+├── data/
+│   ├── processed/               # manifests (train/valid/test JSON)
+│   ├── processed_images/        # cached RGB assets keyed by SHA-256
+│   └── raw/                     # Roboflow exports + README.roboflow.txt
+├── outputs/
+│   ├── deeplab*/                # batched DeepLab runs
+│   ├── manual/                  # ad-hoc single-image masks
+│   └── routed/                  # router-driven experiments
+├── reports/                     # metrics JSON (IoU/Dice histories & evals)
+├── scripts/                     # CLI entry points (train, router, eval, etc.)
+├── src/
+│   ├── data/                    # manifests, cache, box-mask datasets
+│   ├── pipeline/                # DeepLab inference helpers
+│   └── utils/                   # evaluation + metrics utilities
+└── tests/
 ```
 
-Keep crack-only exports in their own folder (e.g., `data/raw/cracks/`) so augmentation scripts can
-balance classes. Update `configs/base.yaml` → `paths.raw_data_dir` if you prefer a different layout.
-
-### Converting OpenAI JSONL annotations
-Roboflow's "OpenAI" export stores annotations in conversational JSONL files. Convert them into the
-project's processed format (normalized xyxy boxes + canonical labels) via:
-
+## Setup
 ```bash
+python3 -m venv .venv
 source .venv/bin/activate
-python scripts/convert_openai_jsonl.py            # converts both drywall + crack datasets
-python scripts/convert_openai_jsonl.py --dataset cracks  # run per dataset if needed
+pip install --upgrade pip
+pip install -r requirements.txt
 ```
 
-Outputs land in `data/processed/<dataset>/<split>.json` with prompt text, remote `image_url`, and
-label frequencies for quick sanity checks.
+Populate `data/raw/` with Roboflow exports, keep checkpoints in `checkpoints/`, and download/copy any
+pretrained weights referenced by the router.
 
-## Prompt Templates
-Store reusable prompt sets inside `data/prompts/`. The `configs/base.yaml` file expects each entry to
-have a `label` (used downstream for metrics) and a `text` field (textual description passed into the
-detector). See `data/prompts/drywall_prompts.yaml` for a richer template you can copy into configs at
-run time.
-
-## Processed Dataset API
-- `src/data/openai_jsonl_converter.py` parses Roboflow/OpenAI JSONL exports into normalized manifests
-   (run via `scripts/convert_openai_jsonl.py`).
-- `src/data/processed_dataset.py` loads those manifests and wraps each sample in a convenient
-   dataclass-like record for downstream pipelines.
-- `src/data/image_cache.py` plus `scripts/download_processed_images.py` let you pre-download all
-   remote `image_url` assets into `data/processed_images/`:
-
+## Data Preparation
+1. **Download Roboflow exports**
    ```bash
-   python scripts/download_processed_images.py data/processed/drywall_join_detect/train.json \
-         data/processed/cracks/train.json --cache-dir data/processed_images
+   curl -L "https://app.roboflow.com/ds/<dataset>?key=<api-key>" -o data/raw/drywall.zip
+   cd data/raw && unzip -o drywall.zip && rm drywall.zip
+   ```
+2. **Convert COCO → processed manifests**
+   ```bash
+   source .venv/bin/activate
+   python scripts/convert_coco.py --dataset all
+   ```
+   This walks each Roboflow `coco_*` export (train/valid/test), normalizes boxes, and writes manifests to `data/processed/<dataset>/<split>.json`.
+3. **Pre-cache imagery for offline use**
+   ```bash
+   python scripts/download_processed_images.py \
+      data/processed/drywall_join_detect/train.json \
+      data/processed/cracks/train.json \
+      --cache-dir data/processed_images
    ```
 
-   Each image is stored once using a SHA-256 hash of its URL, keeping the dataset reproducible.
+## Pipeline Overview
+```
+Roboflow export → convert_coco.py → ProcessedDataset JSON
+        ↓                                      ↓
+download_processed_images.py          box_mask_dataset.py
+        ↓                                      ↓
+cached RGBs (data/processed_images)    train_segmentation.py → checkpoints/*.pth
+        ↓                                      ↓
+routes YAML ──┐                     deeplab_inference.py helpers
+              ├─ run_segmentation_router.py ─┐
+              ├─ run_deeplab_segmentation.py ├─ PNG masks (outputs/*)
+              └─ run_single_prompt_inference.py
+                                                ↓
+                                     eval_segmentation.py → reports/*.json
+```
 
-## Prompted Segmentation Pipeline
-- `src/models/grounding_dino.py` wraps the GroundingDINO SwinT checkpoint to produce prompt-aware
-   bounding boxes.
-- `src/models/sam_wrapper.py` exposes a simple SAM interface to turn boxes into masks.
-- `src/pipeline/prompted_segmentor.py` fuses the detector + segmentor for a single prompt.
-- Run the full pipeline with:
+### Inference pipeline internals
+At inference time the router, single-image CLI, and evaluator all follow the same text-handling and
+checkpoint-selection logic:
 
-   ```bash
-   python scripts/run_prompted_segmentation.py \
-         data/processed/drywall_join_detect/valid.json \
-         --prompt-label exposed_joint_tape \
-         --config configs/base.yaml \
-         --output-dir outputs/masks/drywall_valid
-   ```
+1. **CLI input** – you pass `--prompt-label <logical-name>` plus a free-form `--prompt-text`.
+2. **Route lookup** – `configs/segmentation_routes.yaml` maps the prompt label to a checkpoint,
+   resize/batch overrides, class labels, and an optional mask suffix.
+3. **Sanitize prompt text** – `sanitize_prompt_text` lowercases, replaces spaces with `_`, and removes
+   punctuation so filenames stay deterministic (e.g., "Highlight exposed drywall joints" →
+   `highlight_exposed_drywall_joints`). This sanitized text is concatenated with the label name unless
+   `--no-label-suffix` is provided.
+4. **DeepLab configuration** – `src/pipeline/deeplab_inference.py` loads the checkpoint, resolves the
+   active class labels, and builds label → channel index mappings to extract the requested masks.
+5. **Mask naming** – each PNG follows `<sample_id>__<sanitized_prompt>_<label>.png`, ensuring
+   evaluation CLIs can rediscover the files later just by repeating the same prompt text.
+6. **Evaluation** – `scripts/eval_segmentation.py` sanitizes the provided `--prompt-text` the exact
+   same way before searching `--mask-dir`, so as long as you copy the text emitted by the inference
+   CLI, the evaluator finds the masks automatically.
 
-   Prompt labels come from `configs/base.yaml`. Ensure the referenced GroundingDINO config, checkpoints,
-   and SAM checkpoints exist under `checkpoints/` before running.
+```
+[CLI args] → [routes YAML lookup] → [DeepLab config + checkpoint]
+       ↓                      ↓
+ sanitize(prompt_text)   resolve class labels
+       ↓                      ↓
+ build mask filename suffix  model forward pass
+                 \            /
+                  → write PNG masks → eval_segmentation.py (same sanitize())
+```
 
-## Evaluation & Reporting
-- `src/utils/mask_metrics.py` implements IoU/Dice helpers for binary masks.
-- `scripts/eval_segmentation.py` compares predicted PNG masks against manifest-derived ground truth
-   (boxes rasterized to masks) and reports mean IoU/Dice plus per-sample stats:
+Use the JSON summary printed by `run_segmentation_router.py` or `run_single_prompt_inference.py` to
+copy the exact `prompt_suffixes` value into downstream evaluation commands.
 
-   ```bash
-   python scripts/eval_segmentation.py \
-         data/processed/drywall_join_detect/valid.json \
-         --mask-dir outputs/smoke/drywall_joints \
-         --prompt-label exposed_joint_tape \
-         --target-label drywall_joint \
-         --max-samples 200 \
-         --image-cache data/processed_images \
-         --output reports/drywall_valid_metrics.json
-   ```
+## Core CLIs
 
-   Adjust `--target-label` for other datasets (e.g., `drywall_crack`) and remove `--max-samples` to
-   evaluate the full split.
+### Training
+```bash
+python scripts/train_segmentation.py \
+   data/processed/drywall_join_detect/train.json \
+   data/processed/drywall_join_detect/valid.json \
+   --target-label drywall_joint --epochs 6 --batch-size 4 \
+   --resize 512 512 --cached-only --device cuda \
+   --output checkpoints/deeplabv3_joint_latest.pth \
+   --metrics-output reports/finetune_deeplab_joint_history.json
+```
+- Uses `src/data/box_mask_dataset.py` to rasterize boxes into binary masks on the fly.
+- Metrics JSON stores IoU/Dice per epoch so you can monitor regressions.
 
-   ### Hyper-parameter sweeps
-   - `scripts/hparam_sweep.py` automates a grid search over detector/segmentor thresholds, min mask
-      areas, and optional multimask unions. The script runs inference for each combination, evaluates
-      results, and writes ranked metrics to `reports/hparam_sweep.json`:
+### Batch inference via router
+```bash
+python scripts/run_segmentation_router.py \
+   data/processed/drywall_join_detect/valid.json \
+   --prompt-label joint_latest \
+   --output-dir outputs/routed/joint_latest_long_prompt \
+   --max-samples 100 --skip-existing
+```
+- Router looks up `joint_latest` inside `configs/segmentation_routes.yaml` to find the checkpoint,
+  resize, batch size, and mask suffix.
+- Add new defect types by extending the YAML with `{checkpoint, mask_suffix, class_labels}`.
 
-      ```bash
-      python scripts/hparam_sweep.py \
-         data/processed/drywall_join_detect/valid.json \
-         --prompt-label exposed_joint_tape \
-         --target-label drywall_joint \
-         --mask-root outputs/sweeps/drywall_joint_valid \
-         --max-samples 100 \
-         --box-thresholds 0.25 0.35 0.45 \
-         --text-thresholds 0.15 0.25 0.35 \
-         --mask-thresholds 0.3 0.45 0.6 \
-         --top-ks 1 3 --min-mask-areas 500 2500 \
-         --multimask
-      ```
+### Single-image inference
+```bash
+python scripts/run_single_prompt_inference.py \
+   data/processed_images/<sha>.jpg \
+   --prompt-label crack_latest \
+   --prompt-text "Outline fine surface cracks" \
+   --output-dir outputs/manual/crack_test \
+   --output-name crack_demo --no-label-suffix
+```
+- Sanitized prompt text defines the filename suffix that `eval_segmentation.py` expects.
+- `--no-label-suffix` keeps the suffix compact when you only emit one class.
 
-      Narrow the grids as you converge; `--max-samples` keeps sweeps quick, while `--multimask` enables
-      SAM's multi-mask fusion for challenging prompts.
+### Evaluation
+```bash
+python scripts/eval_segmentation.py \
+   data/processed/drywall_join_detect/valid.json \
+   --mask-dir outputs/routed/joint_latest_long_prompt \
+   --prompt-label joint_latest \
+   --prompt-text joint_latest_drywall_joint \
+   --target-label drywall_joint \
+   --image-cache data/processed_images \
+   --max-samples 5 \
+   --output reports/joint_latest_long_prompt_eval.json
+```
+- `--prompt-text` **must** match the sanitized suffix used by inference (see CLI output) so metrics
+  can locate the correct PNGs.
+- Outputs include per-sample IoU/Dice plus aggregated means.
 
-### Fine-tuning a segmentation head
-- `scripts/train_segmentation.py` fine-tunes a DeepLabV3-ResNet50 head on box-derived drywall masks.
-   The dataset is built via `src/data/box_mask_dataset.py`, which rasterizes normalized boxes into
-   binary masks and (optionally) restricts samples to images already cached locally.
-- Example command (uses cached images only, 512×512 crops, and stores artifacts in `checkpoints/` and
-   `reports/`):
+## Results (latest runs)
+| Defect Type   | Dataset Split | Prompt Label | Mean IoU | Mean Dice | Samples | Report |
+|--------------|---------------|--------------|---------:|----------:|--------:|--------|
+| Drywall Joint | drywall_join_detect / valid | `joint_latest` | **0.803** | **0.880** | 202 | `reports/joint_latest_eval.json` |
+| Drywall Crack | cracks / valid | `crack_latest` | **0.667** | **0.768** | 201 | `reports/crack_latest_eval.json` |
 
-   ```bash
-   python scripts/train_segmentation.py \
-         data/processed/drywall_join_detect/train.json \
-         data/processed/drywall_join_detect/valid.json \
-         --target-label drywall_joint \
-         --epochs 3 --batch-size 2 --lr 5e-4 \
-         --max-train-samples 40 --max-valid-samples 20 \
-         --resize 512 512 --cached-only --device cuda \
-         --output checkpoints/deeplab_drywall_joint.pth \
-         --metrics-output reports/finetune_deeplab_history.json
-   ```
+Full validation splits were used for these numbers (router-generated masks evaluated via `scripts/eval_segmentation.py`).
 
-   Remove `--cached-only` once all manifest images are downloaded via
-   `scripts/download_processed_images.py`. The metrics JSON captures train/validation loss + IoU/Dice
-   per epoch; the checkpoint stores the best-performing weights.
+## Visula Examples
 
-### Running the fine-tuned DeepLab model
-- `scripts/run_deeplab_segmentation.py` loads a fine-tuned checkpoint and converts every image from a
-   processed manifest into a binary mask. You can control the resize resolution, batch size, and how
-   the output files are named via `--mask-suffix`.
-- Example command (first 150 validation samples, CUDA, 512×512 crops):
+<table class="visual-grid">
+   <thead>
+      <tr>
+         <th>Sample</th>
+         <th>Original</th>
+         <th>Ground Truth</th>
+         <th>Prediction</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td><code>cracks_valid_00121</code></td>
+         <td><img src="reports/examples/cracks_valid_00121_original.png" width="200" /></td>
+         <td><img src="reports/examples/cracks_valid_00121_gt.png" width="200" /></td>
+         <td><img src="reports/reports/examples/cracks_valid_00121_prediction.png" width="200" /></td>
+      </tr>
+      <tr>
+         <td><code>cracks_valid_00118</code></td>
+         <td><img src="reports/examples/cracks_valid_00118_original.png" width="200" /></td>
+         <td><img src="reports/examples/cracks_valid_00118_gt.png" width="200" /></td>
+         <td><img src="reports/examples/cracks_valid_00118_prediction.png" width="200" /></td>
+      </tr>
+      <tr>
+         <td><code>cracks_valid_00096</code></td>
+         <td><img src="reports/examples/cracks_valid_00096_original.png" width="200" /></td>
+         <td><img src="reports/examples/cracks_valid_00096_gt.png" width="200" /></td>
+         <td><img src="reports/examples/cracks_valid_00096_prediction.png" width="200" /></td>
+      </tr>
+      <tr>
+         <td><code>drywall_join_detect_valid_00093</code></td>
+         <td><img src="reports/examples/drywall_join_detect_valid_00093_original.png" width="200" /></td>
+         <td><img src="reports/examples/drywall_join_detect_valid_00093_gt.png" width="200" /></td>
+         <td><img src="reports/examples/drywall_join_detect_valid_00093_prediction.png" width="200" /></td>
+      </tr>
+      <tr>
+         <td><code>drywall_join_detect_valid_00141</code></td>
+         <td><img src="reports/examples/drywall_join_detect_valid_00141_original.png" width="200" /></td>
+         <td><img src="reports/examples/drywall_join_detect_valid_00141_gt.png" width="200" /></td>
+         <td><img src="reports/examples/drywall_join_detect_valid_00141_prediction.png" width="200" /></td>
+      </tr>
+      <tr>
+         <td><code>drywall_join_detect_valid_00123</code></td>
+         <td><img src="reports/examples/drywall_join_detect_valid_00123_original.png" width="200" /></td>
+         <td><img src="reports/examples/drywall_join_detect_valid_00123_gt.png" width="200" /></td>
+         <td><img src="reports/examples/drywall_join_detect_valid_00123_prediction.png" width="200" /></td>
+      </tr>
+   </tbody>
+</table>
 
-   ```bash
-   python scripts/run_deeplab_segmentation.py \
-         data/processed/drywall_join_detect/valid.json \
-         --checkpoint checkpoints/deeplab_drywall_joint.pth \
-         --output-dir outputs/deeplab/drywall_valid \
-         --mask-suffix deeplab_joint \
-         --resize 512 512 --batch-size 4 --device cuda --max-samples 150
-   ```
-
-- Evaluate those masks with the existing metrics CLI by pointing `--mask-dir` to the DeepLab output
-   directory and passing `--prompt-label`/`--prompt-text` that match the file suffix:
-
-   ```bash
-   python scripts/eval_segmentation.py \
-         data/processed/drywall_join_detect/valid.json \
-         --mask-dir outputs/deeplab/drywall_valid \
-         --prompt-label deeplab_joint --prompt-text deeplab_joint \
-         --target-label drywall_joint --image-cache data/processed_images \
-         --output reports/deeplab_valid_eval.json
-   ```
-
-   ### Routing DeepLab checkpoints per defect
-   - `configs/segmentation_routes.yaml` centralizes which inference engine + checkpoint should run for a
-      given logical prompt/defect label (e.g., `joint_latest`, `crack_latest`).
-   - `scripts/run_segmentation_router.py` reads that mapping and dispatches to the DeepLab runner. You
-      can still override resize, batch size, device, max samples, and output directory on the CLI.
-   - Example commands:
-
-     ```bash
-     # Joints – uses checkpoints/deeplabv3_joint_latest.pth defined in the routes file
-     python scripts/run_segmentation_router.py \
-        data/processed/drywall_join_detect/valid.json \
-        --prompt-label joint_latest \
-        --output-dir outputs/deeplab_joint/drywall_valid
-
-     # Cracks – same script, different prompt label and manifest
-     python scripts/run_segmentation_router.py \
-        data/processed/cracks/valid.json \
-        --prompt-label crack_latest \
-        --output-dir outputs/deeplab_crack/cracks_valid
-     ```
-
-     Extend `configs/segmentation_routes.yaml` with new entries if you train additional defect-specific
-     checkpoints, or adjust the defaults to change resize/batch-size settings.
+## Implementation Notes
+- `src/pipeline/deeplab_inference.py` now exposes both batched-manifest and single-image helpers so
+  every CLI shares the same preprocessing + checkpoint loading code path.
+- Prompt text is sanitized via `src/utils/evaluator.sanitize_prompt_text`, so long natural-language
+  descriptions can be used consistently across inference and evaluation.
 
 ## Next Steps
-- Implement data ingestion utilities under `src/data/`.
-- Wire a prompted segmentation pipeline (GroundingDINO → SAM) under `src/pipeline/`.
-- Add QA scoring/report generation logic plus regression tests.
+1. Scale evaluation to the full validation/test manifests for statistically stable metrics.
+2. Extend the router with additional defect prompts (e.g., nail pops, paint runs) once checkpoints
+   are available.
+3. Add automated regression tests under `tests/` for the new single-image CLI and evaluator sanity
+   checks.

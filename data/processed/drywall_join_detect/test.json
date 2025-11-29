@@ -1,0 +1,8 @@
+{
+  "dataset": "drywall_join_detect",
+  "split": "test",
+  "num_samples": 0,
+  "label_frequencies": {},
+  "reference_resolution": 1024,
+  "samples": []
+}

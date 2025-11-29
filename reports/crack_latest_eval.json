@@ -1,0 +1,1620 @@
+{
+  "dataset": "cracks",
+  "split": "valid",
+  "prompt_label": "crack_latest",
+  "target_label": "drywall_crack",
+  "num_evaluated": 201,
+  "missing_predictions": 0,
+  "mean_iou": 0.6670265756839345,
+  "mean_dice": 0.7681041912761566,
+  "details": [
+    {
+      "sample_id": "cracks_valid_00000",
+      "iou": 0.7506929791899384,
+      "dice": 0.8575952358445977,
+      "gt_pixels": 18186,
+      "pred_pixels": 24130,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00000__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00001",
+      "iou": 0.6870203349952384,
+      "dice": 0.8144778349659638,
+      "gt_pixels": 12264,
+      "pred_pixels": 17851,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00001__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00002",
+      "iou": 0.908052214283561,
+      "dice": 0.9518106553750869,
+      "gt_pixels": 30540,
+      "pred_pixels": 32752,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00002__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00003",
+      "iou": 0.5799696686887541,
+      "dice": 0.7341529146823199,
+      "gt_pixels": 19890,
+      "pred_pixels": 34284,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00003__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00004",
+      "iou": 0.8115610789705497,
+      "dice": 0.8959798136441892,
+      "gt_pixels": 34103,
+      "pred_pixels": 41988,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00004__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00005",
+      "iou": 0.6932209222298692,
+      "dice": 0.8188192256884463,
+      "gt_pixels": 16116,
+      "pred_pixels": 23248,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00005__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00006",
+      "iou": 0.901709849994755,
+      "dice": 0.9483148546527663,
+      "gt_pixels": 18204,
+      "pred_pixels": 18054,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00006__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00007",
+      "iou": 0.7090894071646887,
+      "dice": 0.8297862056743301,
+      "gt_pixels": 35259,
+      "pred_pixels": 26810,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00007__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00008",
+      "iou": 0.9268632629107981,
+      "dice": 0.9620436288879582,
+      "gt_pixels": 25600,
+      "pred_pixels": 26934,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00008__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00009",
+      "iou": 0.7299420680898342,
+      "dice": 0.843891921647782,
+      "gt_pixels": 9198,
+      "pred_pixels": 12601,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00009__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00010",
+      "iou": 0.9722099718621307,
+      "dice": 0.9859091939832195,
+      "gt_pixels": 156877,
+      "pred_pixels": 160635,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00010__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00011",
+      "iou": 0.7953400147217032,
+      "dice": 0.8860048884333359,
+      "gt_pixels": 31171,
+      "pred_pixels": 32244,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00011__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00012",
+      "iou": 0.5065055541019481,
+      "dice": 0.6724244098839505,
+      "gt_pixels": 21294,
+      "pred_pixels": 42041,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00012__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00013",
+      "iou": 0.5488321811612756,
+      "dice": 0.7087045166504418,
+      "gt_pixels": 38584,
+      "pred_pixels": 70302,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00013__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00014",
+      "iou": 0.5440671950786703,
+      "dice": 0.704719583205639,
+      "gt_pixels": 13797,
+      "pred_pixels": 25359,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00014__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00015",
+      "iou": 0.14032368708554588,
+      "dice": 0.2461120270932668,
+      "gt_pixels": 34311,
+      "pred_pixels": 10571,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00015__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00016",
+      "iou": 0.82855224609375,
+      "dice": 0.9062385259855136,
+      "gt_pixels": 32704,
+      "pred_pixels": 27214,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00016__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00017",
+      "iou": 0.3441062952989439,
+      "dice": 0.5120224442106506,
+      "gt_pixels": 213026,
+      "pred_pixels": 74977,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00017__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00018",
+      "iou": 0.9122647631408176,
+      "dice": 0.9541197230894529,
+      "gt_pixels": 56232,
+      "pred_pixels": 61640,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00018__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00019",
+      "iou": 0.9333359825153984,
+      "dice": 0.9655186588945253,
+      "gt_pixels": 251264,
+      "pred_pixels": 235260,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00019__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00020",
+      "iou": 0.5916554364368996,
+      "dice": 0.7434466315918061,
+      "gt_pixels": 88246,
+      "pred_pixels": 149151,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00020__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00021",
+      "iou": 0.8307089761010311,
+      "dice": 0.9075270695075096,
+      "gt_pixels": 23368,
+      "pred_pixels": 22440,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00021__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00022",
+      "iou": 0.5189738153291635,
+      "dice": 0.6833216084329949,
+      "gt_pixels": 122706,
+      "pred_pixels": 235506,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00022__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00023",
+      "iou": 0.9362818270994157,
+      "dice": 0.9670925110132158,
+      "gt_pixels": 21973,
+      "pred_pixels": 23427,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00023__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00024",
+      "iou": 0.2794474720768359,
+      "dice": 0.4368252361673414,
+      "gt_pixels": 5179,
+      "pred_pixels": 18533,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00024__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00025",
+      "iou": 0.9007874015748032,
+      "dice": 0.947804473902237,
+      "gt_pixels": 28160,
+      "pred_pixels": 29776,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00025__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00026",
+      "iou": 0.901765489673551,
+      "dice": 0.9483456236534655,
+      "gt_pixels": 28616,
+      "pred_pixels": 28475,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00026__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00027",
+      "iou": 0.49511639035100063,
+      "dice": 0.6623115010260369,
+      "gt_pixels": 17590,
+      "pred_pixels": 35527,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00027__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00028",
+      "iou": 0.9308652792990142,
+      "dice": 0.9641949537121075,
+      "gt_pixels": 44457,
+      "pred_pixels": 43687,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00028__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00029",
+      "iou": 0.6844240739349312,
+      "dice": 0.8126505486662503,
+      "gt_pixels": 39100,
+      "pred_pixels": 50572,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00029__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00030",
+      "iou": 0.4176547152499698,
+      "dice": 0.5892192376002168,
+      "gt_pixels": 58721,
+      "pred_pixels": 140597,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00030__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00031",
+      "iou": 0.8535587428622814,
+      "dice": 0.9209945421467556,
+      "gt_pixels": 43265,
+      "pred_pixels": 39185,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00031__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00032",
+      "iou": 0.8430506000648719,
+      "dice": 0.914842598499681,
+      "gt_pixels": 20910,
+      "pred_pixels": 24547,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00032__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00033",
+      "iou": 0.657382131124786,
+      "dice": 0.793277686273415,
+      "gt_pixels": 28416,
+      "pred_pixels": 43226,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00033__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00034",
+      "iou": 0.568214523188075,
+      "dice": 0.7246642787530535,
+      "gt_pixels": 57912,
+      "pred_pixels": 100106,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00034__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00035",
+      "iou": 0.9709881782869477,
+      "dice": 0.9852805704099822,
+      "gt_pixels": 174251,
+      "pred_pixels": 176374,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00035__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00036",
+      "iou": 0.9007122205768282,
+      "dice": 0.9477628552348446,
+      "gt_pixels": 25550,
+      "pred_pixels": 28358,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00036__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00037",
+      "iou": 0.7028553498588014,
+      "dice": 0.8255021190344574,
+      "gt_pixels": 17920,
+      "pred_pixels": 25496,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00037__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00038",
+      "iou": 0.8685820696993881,
+      "dice": 0.9296697038724373,
+      "gt_pixels": 30660,
+      "pred_pixels": 32556,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00038__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00039",
+      "iou": 0.8823954830933198,
+      "dice": 0.9375240123752199,
+      "gt_pixels": 72420,
+      "pred_pixels": 75941,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00039__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00040",
+      "iou": 0.8598743663213577,
+      "dice": 0.9246585488697301,
+      "gt_pixels": 31620,
+      "pred_pixels": 35886,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00040__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00041",
+      "iou": 0.42148865076621733,
+      "dice": 0.5930242925809145,
+      "gt_pixels": 36581,
+      "pred_pixels": 86790,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00041__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00042",
+      "iou": 0.5483666262001986,
+      "dice": 0.7083162565263101,
+      "gt_pixels": 217464,
+      "pred_pixels": 119250,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00042__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00043",
+      "iou": 0.4251584592881521,
+      "dice": 0.596647280191584,
+      "gt_pixels": 8720,
+      "pred_pixels": 20510,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00043__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00044",
+      "iou": 0.8940051359249093,
+      "dice": 0.9440366543550424,
+      "gt_pixels": 20440,
+      "pred_pixels": 22338,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00044__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00045",
+      "iou": 0.9230885721316751,
+      "dice": 0.960006299770649,
+      "gt_pixels": 146812,
+      "pred_pixels": 157961,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00045__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00046",
+      "iou": 0.1893243497729698,
+      "dice": 0.3183729481517972,
+      "gt_pixels": 9048,
+      "pred_pixels": 47791,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00046__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00047",
+      "iou": 0.8111149886581749,
+      "dice": 0.8957078857363071,
+      "gt_pixels": 19773,
+      "pred_pixels": 21745,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00047__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00048",
+      "iou": 0.8621221911120683,
+      "dice": 0.9259566265060241,
+      "gt_pixels": 24017,
+      "pred_pixels": 27858,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00048__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00049",
+      "iou": 0.9235927921233513,
+      "dice": 0.9602789071629309,
+      "gt_pixels": 51100,
+      "pred_pixels": 52447,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00049__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00050",
+      "iou": 0.8377573707104882,
+      "dice": 0.9117170569547013,
+      "gt_pixels": 44457,
+      "pred_pixels": 50601,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00050__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00051",
+      "iou": 0.6297783208238785,
+      "dice": 0.7728392417264646,
+      "gt_pixels": 11242,
+      "pred_pixels": 16769,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00051__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00052",
+      "iou": 0.7573428493000275,
+      "dice": 0.8619181505779444,
+      "gt_pixels": 16566,
+      "pred_pixels": 21846,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00052__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00053",
+      "iou": 0.4363791631084543,
+      "dice": 0.6076099881093936,
+      "gt_pixels": 4599,
+      "pred_pixels": 10539,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00053__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00054",
+      "iou": 0.7383371455928507,
+      "dice": 0.8494751981394779,
+      "gt_pixels": 15841,
+      "pred_pixels": 16838,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00054__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00055",
+      "iou": 0.9515976660183384,
+      "dice": 0.9751986104387939,
+      "gt_pixels": 17238,
+      "pred_pixels": 17881,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00055__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00056",
+      "iou": 0.7608107313055245,
+      "dice": 0.8641595803331273,
+      "gt_pixels": 99864,
+      "pred_pixels": 79707,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00056__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00057",
+      "iou": 0.8403962575674189,
+      "dice": 0.9132775119617225,
+      "gt_pixels": 30540,
+      "pred_pixels": 36340,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00057__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00058",
+      "iou": 0.4748497009277344,
+      "dice": 0.6439296161894145,
+      "gt_pixels": 124479,
+      "pred_pixels": 262144,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00058__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00059",
+      "iou": 0.927252323680808,
+      "dice": 0.962253164556962,
+      "gt_pixels": 40369,
+      "pred_pixels": 38631,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00059__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00060",
+      "iou": 0.43448624084827064,
+      "dice": 0.6057726152763112,
+      "gt_pixels": 30978,
+      "pred_pixels": 71298,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00060__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00061",
+      "iou": 0.9632448587710605,
+      "dice": 0.9812783713326787,
+      "gt_pixels": 251446,
+      "pred_pixels": 255668,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00061__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00062",
+      "iou": 0.8475392468458056,
+      "dice": 0.917479017880415,
+      "gt_pixels": 28392,
+      "pred_pixels": 29157,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00062__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00063",
+      "iou": 0.23920686661067855,
+      "dice": 0.3860644627719451,
+      "gt_pixels": 17028,
+      "pred_pixels": 70030,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00063__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00064",
+      "iou": 0.5073006134969326,
+      "dice": 0.6731246692987097,
+      "gt_pixels": 48301,
+      "pred_pixels": 25406,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00064__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00065",
+      "iou": 0.6510017718413521,
+      "dice": 0.7886142618917893,
+      "gt_pixels": 47764,
+      "pred_pixels": 73370,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00065__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00066",
+      "iou": 0.47402618498424354,
+      "dice": 0.6431720003526404,
+      "gt_pixels": 14591,
+      "pred_pixels": 30781,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00066__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00067",
+      "iou": 0.17197979474926864,
+      "dice": 0.2934859381019648,
+      "gt_pixels": 18283,
+      "pred_pixels": 106309,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00067__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00068",
+      "iou": 0.5784174308177643,
+      "dice": 0.7329080628792742,
+      "gt_pixels": 49222,
+      "pred_pixels": 47344,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00068__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00069",
+      "iou": 0.4203739253818546,
+      "dice": 0.5919200822682533,
+      "gt_pixels": 11665,
+      "pred_pixels": 22370,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00069__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00070",
+      "iou": 0.8604349466930843,
+      "dice": 0.9249825673534073,
+      "gt_pixels": 38165,
+      "pred_pixels": 40710,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00070__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00071",
+      "iou": 0.895494184577763,
+      "dice": 0.9448661904254185,
+      "gt_pixels": 89088,
+      "pred_pixels": 98492,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00071__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00072",
+      "iou": 0.2785428157455772,
+      "dice": 0.43571918330032,
+      "gt_pixels": 23814,
+      "pred_pixels": 81194,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00072__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00073",
+      "iou": 0.32563863412612054,
+      "dice": 0.4912932163308382,
+      "gt_pixels": 51298,
+      "pred_pixels": 51036,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00073__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00074",
+      "iou": 0.2788433086751849,
+      "dice": 0.43608674617698406,
+      "gt_pixels": 10370,
+      "pred_pixels": 37171,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00074__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00075",
+      "iou": 0.6175017642907551,
+      "dice": 0.7635253054101222,
+      "gt_pixels": 17373,
+      "pred_pixels": 21591,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00075__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00076",
+      "iou": 0.2967479674796748,
+      "dice": 0.45768025078369906,
+      "gt_pixels": 3263,
+      "pred_pixels": 1841,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00076__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00077",
+      "iou": 0.49049600261054005,
+      "dice": 0.6581648011822336,
+      "gt_pixels": 36075,
+      "pred_pixels": 73548,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00077__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00078",
+      "iou": 0.5899668024528494,
+      "dice": 0.7421121013881607,
+      "gt_pixels": 81634,
+      "pred_pixels": 137721,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00078__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00079",
+      "iou": 0.5137819823693829,
+      "dice": 0.6788057835979888,
+      "gt_pixels": 12531,
+      "pred_pixels": 22672,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00079__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00080",
+      "iou": 0.25842220495797724,
+      "dice": 0.4107082725333932,
+      "gt_pixels": 5185,
+      "pred_pixels": 12633,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00080__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00081",
+      "iou": 0.7263297704130036,
+      "dice": 0.8414727972156073,
+      "gt_pixels": 11484,
+      "pred_pixels": 15811,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00081__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00082",
+      "iou": 0.8928116954218579,
+      "dice": 0.9433708567854909,
+      "gt_pixels": 30312,
+      "pred_pixels": 33648,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00082__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00083",
+      "iou": 0.19386666666666666,
+      "dice": 0.3247710520437793,
+      "gt_pixels": 19629,
+      "pred_pixels": 101250,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00083__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00084",
+      "iou": 0.23939021175643616,
+      "dice": 0.3863032150579561,
+      "gt_pixels": 10898,
+      "pred_pixels": 45524,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00084__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00085",
+      "iou": 0.2837470971118307,
+      "dice": 0.4420607419486343,
+      "gt_pixels": 9803,
+      "pred_pixels": 29445,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00085__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00086",
+      "iou": 0.32727272727272727,
+      "dice": 0.4931506849315068,
+      "gt_pixels": 13980,
+      "pred_pixels": 18870,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00086__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00087",
+      "iou": 0.34626410649483375,
+      "dice": 0.5144073957321428,
+      "gt_pixels": 41084,
+      "pred_pixels": 114357,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00087__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00088",
+      "iou": 0.09786209914358943,
+      "dice": 0.1782775800711744,
+      "gt_pixels": 7097,
+      "pred_pixels": 63153,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00088__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00089",
+      "iou": 0.6819902471278618,
+      "dice": 0.8109324632439657,
+      "gt_pixels": 45485,
+      "pred_pixels": 56267,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00089__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00090",
+      "iou": 0.75390625,
+      "dice": 0.8596881959910914,
+      "gt_pixels": 13592,
+      "pred_pixels": 14246,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00090__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00091",
+      "iou": 0.28443396226415096,
+      "dice": 0.44289386705839145,
+      "gt_pixels": 7308,
+      "pred_pixels": 14476,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00091__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00092",
+      "iou": 0.2615582433730854,
+      "dice": 0.4146590056337713,
+      "gt_pixels": 21037,
+      "pred_pixels": 68246,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00092__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00093",
+      "iou": 0.43193087534979624,
+      "dice": 0.6032845338910412,
+      "gt_pixels": 17761,
+      "pred_pixels": 40573,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00093__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00094",
+      "iou": 0.23493089211990667,
+      "dice": 0.3804761766330417,
+      "gt_pixels": 19780,
+      "pred_pixels": 14619,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00094__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00095",
+      "iou": 0.0799955709436871,
+      "dice": 0.14814055371317483,
+      "gt_pixels": 18784,
+      "pred_pixels": 234813,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00095__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00096",
+      "iou": 0.9211880587201436,
+      "dice": 0.9589774978445581,
+      "gt_pixels": 75264,
+      "pred_pixels": 76677,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00096__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00097",
+      "iou": 0.5678957086107537,
+      "dice": 0.7244049530742604,
+      "gt_pixels": 47890,
+      "pred_pixels": 36179,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00097__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00098",
+      "iou": 0.1447297898301992,
+      "dice": 0.2528627997908002,
+      "gt_pixels": 25485,
+      "pred_pixels": 175280,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00098__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00099",
+      "iou": 0.47317560813062315,
+      "dice": 0.6423885998642841,
+      "gt_pixels": 36267,
+      "pred_pixels": 30048,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00099__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00100",
+      "iou": 0.2512411810817873,
+      "dice": 0.4015871358462984,
+      "gt_pixels": 29499,
+      "pred_pixels": 27963,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00100__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00101",
+      "iou": 0.060546875,
+      "dice": 0.1141804788213628,
+      "gt_pixels": 15872,
+      "pred_pixels": 262144,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00101__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00102",
+      "iou": 0.8087841110931697,
+      "dice": 0.8942848470781481,
+      "gt_pixels": 30660,
+      "pred_pixels": 25349,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00102__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00103",
+      "iou": 0.8265700199240429,
+      "dice": 0.9050515566421214,
+      "gt_pixels": 157899,
+      "pred_pixels": 184055,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00103__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00104",
+      "iou": 0.7718420853224217,
+      "dice": 0.8712312363683018,
+      "gt_pixels": 61601,
+      "pred_pixels": 55314,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00104__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00105",
+      "iou": 0.7975374064837906,
+      "dice": 0.8873666868984653,
+      "gt_pixels": 101795,
+      "pred_pixels": 82733,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00105__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00106",
+      "iou": 0.8878731939365969,
+      "dice": 0.9406068127755997,
+      "gt_pixels": 104960,
+      "pred_pixels": 107758,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00106__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00107",
+      "iou": 0.47653224860171317,
+      "dice": 0.64547489437226,
+      "gt_pixels": 52548,
+      "pred_pixels": 98454,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00107__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00108",
+      "iou": 0.9574065814088183,
+      "dice": 0.9782398715751095,
+      "gt_pixels": 149504,
+      "pred_pixels": 144520,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00108__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00109",
+      "iou": 0.48382944170479075,
+      "dice": 0.6521361931583092,
+      "gt_pixels": 122150,
+      "pred_pixels": 252465,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00109__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00110",
+      "iou": 0.8049379500251177,
+      "dice": 0.8919286671477167,
+      "gt_pixels": 49947,
+      "pred_pixels": 47063,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00110__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00111",
+      "iou": 0.6148248795661011,
+      "dice": 0.7614756093320817,
+      "gt_pixels": 62464,
+      "pred_pixels": 81341,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00111__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00112",
+      "iou": 0.8702140148094636,
+      "dice": 0.9306036720060838,
+      "gt_pixels": 44296,
+      "pred_pixels": 38547,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00112__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00113",
+      "iou": 0.4973027910249394,
+      "dice": 0.664264828738513,
+      "gt_pixels": 32152,
+      "pred_pixels": 63608,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00113__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00114",
+      "iou": 0.36563367252543943,
+      "dice": 0.5354784081287045,
+      "gt_pixels": 13625,
+      "pred_pixels": 21805,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00114__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00115",
+      "iou": 0.8460087297477251,
+      "dice": 0.9165815048592325,
+      "gt_pixels": 22995,
+      "pred_pixels": 26910,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00115__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00116",
+      "iou": 0.6224979052229773,
+      "dice": 0.7673327690829018,
+      "gt_pixels": 160678,
+      "pred_pixels": 257576,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00116__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00117",
+      "iou": 0.606547137401871,
+      "dice": 0.7550941062118937,
+      "gt_pixels": 68526,
+      "pred_pixels": 44644,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00117__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00118",
+      "iou": 0.8617004233894038,
+      "dice": 0.9257133022729788,
+      "gt_pixels": 37664,
+      "pred_pixels": 43683,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00118__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00119",
+      "iou": 0.7360425466944883,
+      "dice": 0.8479545021473697,
+      "gt_pixels": 63441,
+      "pred_pixels": 73005,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00119__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00120",
+      "iou": 0.1665109777049052,
+      "dice": 0.285485487727708,
+      "gt_pixels": 26624,
+      "pred_pixels": 151949,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00120__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00121",
+      "iou": 0.9631022385987936,
+      "dice": 0.9812043607939936,
+      "gt_pixels": 196596,
+      "pred_pixels": 192324,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00121__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00122",
+      "iou": 0.7349852456170803,
+      "dice": 0.8472524449113329,
+      "gt_pixels": 23040,
+      "pred_pixels": 16941,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00122__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00123",
+      "iou": 0.9768030174342676,
+      "dice": 0.9882654051207185,
+      "gt_pixels": 214710,
+      "pred_pixels": 218198,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00123__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00124",
+      "iou": 0.9700775455158462,
+      "dice": 0.9848115346767637,
+      "gt_pixels": 35328,
+      "pred_pixels": 34791,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00124__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00125",
+      "iou": 0.0,
+      "dice": 0.0,
+      "gt_pixels": 67697,
+      "pred_pixels": 0,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00125__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00126",
+      "iou": 0.3599918986316282,
+      "dice": 0.5294030045235392,
+      "gt_pixels": 78848,
+      "pred_pixels": 28590,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00126__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00127",
+      "iou": 0.8007272465437788,
+      "dice": 0.8893376252074294,
+      "gt_pixels": 50082,
+      "pred_pixels": 49952,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00127__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00128",
+      "iou": 0.9397489894564265,
+      "dice": 0.9689387591533389,
+      "gt_pixels": 70656,
+      "pred_pixels": 66589,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00128__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00129",
+      "iou": 0.865894880387634,
+      "dice": 0.9281282557651339,
+      "gt_pixels": 60024,
+      "pred_pixels": 68594,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00129__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00130",
+      "iou": 0.9470400578316283,
+      "dice": 0.9727997675469748,
+      "gt_pixels": 62976,
+      "pred_pixels": 60920,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00130__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00131",
+      "iou": 0.9612578107588302,
+      "dice": 0.9802462536905436,
+      "gt_pixels": 232960,
+      "pred_pixels": 242241,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00131__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00132",
+      "iou": 0.1752581032412965,
+      "dice": 0.29824615164608426,
+      "gt_pixels": 249900,
+      "pred_pixels": 43797,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00132__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00133",
+      "iou": 0.9398675784217952,
+      "dice": 0.9690017905102954,
+      "gt_pixels": 27136,
+      "pred_pixels": 26480,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00133__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00134",
+      "iou": 0.8539072039072039,
+      "dice": 0.9211973523891066,
+      "gt_pixels": 14590,
+      "pred_pixels": 15777,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00134__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00135",
+      "iou": 0.7114018691588785,
+      "dice": 0.8313674093490607,
+      "gt_pixels": 39648,
+      "pred_pixels": 47334,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00135__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00136",
+      "iou": 0.5568455452356381,
+      "dice": 0.7153510467878252,
+      "gt_pixels": 33129,
+      "pred_pixels": 57386,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00136__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00137",
+      "iou": 0.8745510057471264,
+      "dice": 0.9330778443113772,
+      "gt_pixels": 44544,
+      "pred_pixels": 38956,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00137__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00138",
+      "iou": 0.6007411845977108,
+      "dice": 0.7505787823516088,
+      "gt_pixels": 157402,
+      "pred_pixels": 262013,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00138__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00139",
+      "iou": 0.8872542959574731,
+      "dice": 0.940259399973798,
+      "gt_pixels": 63240,
+      "pred_pixels": 58888,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00139__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00140",
+      "iou": 0.8529807261317794,
+      "dice": 0.9206579583938075,
+      "gt_pixels": 31049,
+      "pred_pixels": 26827,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00140__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00141",
+      "iou": 0.8804801288150479,
+      "dice": 0.9364418324057137,
+      "gt_pixels": 37908,
+      "pred_pixels": 39171,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00141__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00142",
+      "iou": 0.7503255294836704,
+      "dice": 0.8573554082879764,
+      "gt_pixels": 170328,
+      "pred_pixels": 224871,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00142__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00143",
+      "iou": 1.0,
+      "dice": 1.0,
+      "gt_pixels": 262144,
+      "pred_pixels": 262144,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00143__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00144",
+      "iou": 0.8954407888313971,
+      "dice": 0.9448364666494978,
+      "gt_pixels": 20480,
+      "pred_pixels": 18350,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00144__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00145",
+      "iou": 0.2346485353670643,
+      "dice": 0.3801058011983996,
+      "gt_pixels": 86868,
+      "pred_pixels": 69841,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00145__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00146",
+      "iou": 0.8731105067831935,
+      "dice": 0.9322573373235081,
+      "gt_pixels": 225632,
+      "pred_pixels": 257889,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00146__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00147",
+      "iou": 0.8563676091706617,
+      "dice": 0.9226271832584353,
+      "gt_pixels": 149504,
+      "pred_pixels": 135105,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00147__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00148",
+      "iou": 0.7397702712547658,
+      "dice": 0.8504229362664358,
+      "gt_pixels": 40406,
+      "pred_pixels": 31236,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00148__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00149",
+      "iou": 0.3294435562352287,
+      "dice": 0.49561119716606866,
+      "gt_pixels": 102920,
+      "pred_pixels": 50083,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00149__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00150",
+      "iou": 0.720531654424624,
+      "dice": 0.8375686115064037,
+      "gt_pixels": 29127,
+      "pred_pixels": 24982,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00150__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00151",
+      "iou": 0.9075335619492841,
+      "dice": 0.9515256560119312,
+      "gt_pixels": 62976,
+      "pred_pixels": 61069,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00151__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00152",
+      "iou": 0.9610518389287764,
+      "dice": 0.9801391476257462,
+      "gt_pixels": 131072,
+      "pred_pixels": 131958,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00152__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00153",
+      "iou": 0.8572948597775695,
+      "dice": 0.9231650594028344,
+      "gt_pixels": 39388,
+      "pred_pixels": 33925,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00153__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00154",
+      "iou": 0.8963647959183674,
+      "dice": 0.9453505969396334,
+      "gt_pixels": 50176,
+      "pred_pixels": 44976,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00154__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00155",
+      "iou": 0.7827979512019506,
+      "dice": 0.8781678828766809,
+      "gt_pixels": 59247,
+      "pred_pixels": 49698,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00155__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00156",
+      "iou": 0.8522192333557498,
+      "dice": 0.9202142143959335,
+      "gt_pixels": 115770,
+      "pred_pixels": 104570,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00156__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00157",
+      "iou": 0.9183381335908801,
+      "dice": 0.9574309320243457,
+      "gt_pixels": 53248,
+      "pred_pixels": 57983,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00157__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00158",
+      "iou": 0.875844527462046,
+      "dice": 0.9338135593220339,
+      "gt_pixels": 91136,
+      "pred_pixels": 97664,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00158__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00159",
+      "iou": 0.8375064036885246,
+      "dice": 0.9115684190350067,
+      "gt_pixels": 62464,
+      "pred_pixels": 52314,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00159__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00160",
+      "iou": 0.9405287745516109,
+      "dice": 0.9693530824029493,
+      "gt_pixels": 78183,
+      "pred_pixels": 74263,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00160__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00161",
+      "iou": 0.7960827608766765,
+      "dice": 0.8864655663062038,
+      "gt_pixels": 39462,
+      "pred_pixels": 48388,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00161__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00162",
+      "iou": 0.41925207638729817,
+      "dice": 0.5908070643158798,
+      "gt_pixels": 231936,
+      "pred_pixels": 102647,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00162__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00163",
+      "iou": 0.12470248512425622,
+      "dice": 0.22175195089122468,
+      "gt_pixels": 114176,
+      "pred_pixels": 14355,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00163__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00164",
+      "iou": 0.905166278070929,
+      "dice": 0.9502228634735784,
+      "gt_pixels": 76800,
+      "pred_pixels": 78452,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00164__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00165",
+      "iou": 0.9192695617675781,
+      "dice": 0.9579368944099379,
+      "gt_pixels": 240981,
+      "pred_pixels": 262144,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00165__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00166",
+      "iou": 0.8174549060931011,
+      "dice": 0.8995600422905085,
+      "gt_pixels": 26376,
+      "pred_pixels": 32266,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00166__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00167",
+      "iou": 0.4294222960718005,
+      "dice": 0.6008333537987999,
+      "gt_pixels": 36698,
+      "pred_pixels": 85459,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00167__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00168",
+      "iou": 0.7773584905660378,
+      "dice": 0.8747346072186837,
+      "gt_pixels": 155588,
+      "pred_pixels": 199546,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00168__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00169",
+      "iou": 0.6783569541196253,
+      "dice": 0.8083583798482897,
+      "gt_pixels": 28243,
+      "pred_pixels": 41627,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00169__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00170",
+      "iou": 0.7054202670856246,
+      "dice": 0.8272685398433901,
+      "gt_pixels": 18360,
+      "pred_pixels": 16376,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00170__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00171",
+      "iou": 0.8194370056321988,
+      "dice": 0.9007588645230061,
+      "gt_pixels": 162057,
+      "pred_pixels": 160662,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00171__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00172",
+      "iou": 0.7352224421713448,
+      "dice": 0.8474100199526409,
+      "gt_pixels": 194546,
+      "pred_pixels": 245496,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00172__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00173",
+      "iou": 0.4363059997558594,
+      "dice": 0.607539061773775,
+      "gt_pixels": 114375,
+      "pred_pixels": 262144,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00173__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00174",
+      "iou": 0.9311493614658523,
+      "dice": 0.9643473260494537,
+      "gt_pixels": 44544,
+      "pred_pixels": 45884,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00174__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00175",
+      "iou": 0.45310521813515825,
+      "dice": 0.6236371771022206,
+      "gt_pixels": 27940,
+      "pred_pixels": 14527,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00175__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00176",
+      "iou": 0.780940483626305,
+      "dice": 0.8769978455834461,
+      "gt_pixels": 19929,
+      "pred_pixels": 19989,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00176__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00177",
+      "iou": 0.9326638233502111,
+      "dice": 0.9651588776918979,
+      "gt_pixels": 46872,
+      "pred_pixels": 45117,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00177__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00178",
+      "iou": 0.7902986941511982,
+      "dice": 0.8828679781011495,
+      "gt_pixels": 191268,
+      "pred_pixels": 166559,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00178__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00179",
+      "iou": 0.81779883163571,
+      "dice": 0.8997682443219859,
+      "gt_pixels": 52542,
+      "pred_pixels": 44543,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00179__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00180",
+      "iou": 0.8122960545832097,
+      "dice": 0.8964275483897369,
+      "gt_pixels": 11448,
+      "pred_pixels": 12989,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00180__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00181",
+      "iou": 0.9132882026317791,
+      "dice": 0.9546791762741512,
+      "gt_pixels": 12246,
+      "pred_pixels": 12908,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00181__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00182",
+      "iou": 0.5020898746075235,
+      "dice": 0.6685217483923365,
+      "gt_pixels": 26900,
+      "pred_pixels": 48209,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00182__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00183",
+      "iou": 0.7542940597517224,
+      "dice": 0.8599402768980183,
+      "gt_pixels": 23797,
+      "pred_pixels": 31458,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00183__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00184",
+      "iou": 0.45837094848423077,
+      "dice": 0.6286068012540187,
+      "gt_pixels": 18073,
+      "pred_pixels": 32006,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00184__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00185",
+      "iou": 0.823411310470134,
+      "dice": 0.9031547690222806,
+      "gt_pixels": 103936,
+      "pred_pixels": 96776,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00185__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00186",
+      "iou": 0.48407872809980634,
+      "dice": 0.6523625990106522,
+      "gt_pixels": 21608,
+      "pred_pixels": 11343,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00186__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00187",
+      "iou": 0.5851429151132416,
+      "dice": 0.7382841124725202,
+      "gt_pixels": 117679,
+      "pred_pixels": 194824,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00187__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00188",
+      "iou": 0.15582275390625,
+      "dice": 0.2696308813434018,
+      "gt_pixels": 40848,
+      "pred_pixels": 262144,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00188__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00189",
+      "iou": 0.7164041313253707,
+      "dice": 0.8347732544458265,
+      "gt_pixels": 48249,
+      "pred_pixels": 40992,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00189__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00190",
+      "iou": 0.8925318973237651,
+      "dice": 0.943214641281235,
+      "gt_pixels": 83334,
+      "pred_pixels": 79384,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00190__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00191",
+      "iou": 0.8135604249019895,
+      "dice": 0.897196932322734,
+      "gt_pixels": 59392,
+      "pred_pixels": 52093,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00191__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00192",
+      "iou": 0.36134231182121096,
+      "dice": 0.5308617952788162,
+      "gt_pixels": 77754,
+      "pred_pixels": 215181,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00192__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00193",
+      "iou": 0.864322120285423,
+      "dice": 0.9272240144349062,
+      "gt_pixels": 26572,
+      "pred_pixels": 28295,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00193__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00194",
+      "iou": 0.9043574680916319,
+      "dice": 0.949777006937562,
+      "gt_pixels": 200160,
+      "pred_pixels": 203440,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00194__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00195",
+      "iou": 0.672227988765417,
+      "dice": 0.80399083531871,
+      "gt_pixels": 119808,
+      "pred_pixels": 99294,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00195__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00196",
+      "iou": 0.5464665415884928,
+      "dice": 0.7067292138466515,
+      "gt_pixels": 8738,
+      "pred_pixels": 15990,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00196__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00197",
+      "iou": 0.7832487049289635,
+      "dice": 0.8784514496088357,
+      "gt_pixels": 127183,
+      "pred_pixels": 150961,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00197__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00198",
+      "iou": 0.8524037380776518,
+      "dice": 0.9203217641551957,
+      "gt_pixels": 60928,
+      "pred_pixels": 54436,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00198__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00199",
+      "iou": 0.9016213245397087,
+      "dice": 0.9482658959537572,
+      "gt_pixels": 49392,
+      "pred_pixels": 54408,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00199__crack_latest_drywall_crack.png"
+    },
+    {
+      "sample_id": "cracks_valid_00200",
+      "iou": 0.8007883565797453,
+      "dice": 0.8893753157097154,
+      "gt_pixels": 30208,
+      "pred_pixels": 29182,
+      "mask": "outputs/routed/crack_latest/cracks_valid_00200__crack_latest_drywall_crack.png"
+    }
+  ]
+}
