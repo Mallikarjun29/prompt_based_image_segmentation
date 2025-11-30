@@ -5,6 +5,8 @@ own fine-tuned DeepLabV3-ResNet50 head. Manifests describe the imagery, the rout
 checkpoint, and automated evaluation reports IoU/Dice so QA teams can catch exposed tape, skim-coat
 issues, and cracks early.
 
+**Full report**: see `full_pipeline_report.pdf` for the choices made summary, Visual Examples, data splits, runtime/footprint stats, metrics, and failure notes.
+
 ## Highlights
 - DeepLab-only stack: lightweight checkpoints per defect with a single, consistent inference path.
 - Flexible routing: `configs/segmentation_routes.yaml` maps prompt labels to checkpoints and output
@@ -13,8 +15,6 @@ issues, and cracks early.
   `scripts/run_single_prompt_inference.py`.
 - Reproducible evaluation: prompts are sanitized into deterministic suffixes so metrics can always be
   tied back to the masks that generated them.
-
-**Full report**: see `full_pipeline_report.pdf` for the choices made summary, Visual Examples, data splits, runtime/footprint stats, metrics, and failure notes.
 
 ## Repository Layout
 ```
@@ -179,57 +179,6 @@ python scripts/eval_segmentation.py \
 | Drywall Crack | cracks / valid | `crack_latest` | **0.667** | **0.768** | 201 | `reports/crack_latest_eval.json` |
 
 Full validation splits were used for these numbers (router-generated masks evaluated via `scripts/eval_segmentation.py`).
-
-## Visula Examples
-
-<table class="visual-grid">
-   <thead>
-      <tr>
-         <th>Sample</th>
-         <th>Original</th>
-         <th>Ground Truth</th>
-         <th>Prediction</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><code>cracks_valid_00121</code></td>
-         <td><img src="reports/examples/cracks_valid_00121_original.png" width="200" /></td>
-         <td><img src="reports/examples/cracks_valid_00121_gt.png" width="200" /></td>
-         <td><img src="reports/reports/examples/cracks_valid_00121_prediction.png" width="200" /></td>
-      </tr>
-      <tr>
-         <td><code>cracks_valid_00118</code></td>
-         <td><img src="reports/examples/cracks_valid_00118_original.png" width="200" /></td>
-         <td><img src="reports/examples/cracks_valid_00118_gt.png" width="200" /></td>
-         <td><img src="reports/examples/cracks_valid_00118_prediction.png" width="200" /></td>
-      </tr>
-      <tr>
-         <td><code>cracks_valid_00096</code></td>
-         <td><img src="reports/examples/cracks_valid_00096_original.png" width="200" /></td>
-         <td><img src="reports/examples/cracks_valid_00096_gt.png" width="200" /></td>
-         <td><img src="reports/examples/cracks_valid_00096_prediction.png" width="200" /></td>
-      </tr>
-      <tr>
-         <td><code>drywall_join_detect_valid_00093</code></td>
-         <td><img src="reports/examples/drywall_join_detect_valid_00093_original.png" width="200" /></td>
-         <td><img src="reports/examples/drywall_join_detect_valid_00093_gt.png" width="200" /></td>
-         <td><img src="reports/examples/drywall_join_detect_valid_00093_prediction.png" width="200" /></td>
-      </tr>
-      <tr>
-         <td><code>drywall_join_detect_valid_00141</code></td>
-         <td><img src="reports/examples/drywall_join_detect_valid_00141_original.png" width="200" /></td>
-         <td><img src="reports/examples/drywall_join_detect_valid_00141_gt.png" width="200" /></td>
-         <td><img src="reports/examples/drywall_join_detect_valid_00141_prediction.png" width="200" /></td>
-      </tr>
-      <tr>
-         <td><code>drywall_join_detect_valid_00123</code></td>
-         <td><img src="reports/examples/drywall_join_detect_valid_00123_original.png" width="200" /></td>
-         <td><img src="reports/examples/drywall_join_detect_valid_00123_gt.png" width="200" /></td>
-         <td><img src="reports/examples/drywall_join_detect_valid_00123_prediction.png" width="200" /></td>
-      </tr>
-   </tbody>
-</table>
 
 ## Implementation Notes
 - `src/pipeline/deeplab_inference.py` now exposes both batched-manifest and single-image helpers so
